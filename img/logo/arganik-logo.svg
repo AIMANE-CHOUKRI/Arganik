@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 128" width="520" height="128" role="img" aria-labelledby="t">
+  <title id="t">Arganik — Coopérative du Souss</title>
+  <g transform="translate(8 8)">
+    <ellipse cx="52" cy="62" rx="44" ry="50" fill="#2F4A3A"/>
+    <path d="M60 10c10-6 22-6 28-2-6 6-16 10-28 8z" fill="#B5562F"/>
+    <path d="M18 30c2-8 8-14 14-16-1 8-6 14-14 16z" fill="#C8962E"/>
+    <path d="M52 30c0 0-22 26-22 44a22 22 0 0 0 44 0c0-18-22-44-22-44z" fill="#C8962E"/>
+    <circle cx="52" cy="72" r="8" fill="#FFF8EF"/>
+  </g>
+  <text x="128" y="72" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" letter-spacing="3" fill="#2F4A3A">ARGANIK</text>
+  <text x="132" y="106" font-family="'Plus Jakarta Sans', Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="5.2" fill="#B5562F">COOPÉRATIVE DU SOUSS</text>
+</svg>
