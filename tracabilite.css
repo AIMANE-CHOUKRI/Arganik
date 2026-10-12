@@ -1,0 +1,40 @@
+#titre {
+    justify-items: center;
+    background-color: lightpink;
+    text-align: center;
+}
+#titre span {
+    /* justify-items: center;
+    text-align: center; */
+}
+#titre h1 {
+    font-family: Playfair Display;
+}
+#titre p {
+    font-family: Plus Jakarta Sans;
+}
+#minicard img {
+    margin: auto;
+}
+#minicard {
+    font-weight: bold;
+    font-size: 10px;
+    margin: auto;
+    background-color: moccasin;
+    padding: 1%;
+    border-radius: 30px;
+}
+#card-verif {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: white;
+    width: max-content;
+    border-radius: 30px;
+}
+#imgGlass {
+    width: 5vw;
+    background-color: turquoise;
+    border-radius: 100%;
+    padding: 2%;
+}
