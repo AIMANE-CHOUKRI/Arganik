@@ -3,8 +3,8 @@ Développement en équipe d'un site vitrine de 5 pages, responsive et accessible
 L'arganier pousse presque uniquement dans le sud-ouest du Maroc. Son fruit contient une noix très dure qui renferme les amandons, d'où l'on extrait l'huile. Les coopératrices récoltent les fruits tombés, les sèchent, cassent les noix à la main puis pressent les amandons. Les bénéfices sont partagés entre elles.
 
 # Équipe:
-Aimane Choukri (Scrum Master)
-Aya Lamzoudi
-Hamza Hakkache
-Meriame Essiass
+Aimane Choukri (Scrum Master),
+Aya Lamzoudi,
+Hamza Hakkache,
+Meriame Essiass,
 Aymane Chokri
