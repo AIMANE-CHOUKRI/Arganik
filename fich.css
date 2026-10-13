@@ -75,24 +75,22 @@ header .headercontainer {
 
 }
 
-.profile button {
-    position: relative;
-    right: 10px;
-    top: -8px;
-    width: 32px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
 .profile {
     padding-right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile button {
+  cursor: pointer;
 }
 
 .profile img {
     width: 34px;
     height: 34px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .menu .lien-actif {
@@ -749,7 +747,7 @@ align-items: center;
   font-weight: 600;
 }
 
-.profile {
+.profile2 {
   padding: 10px;
   border-radius: 50%;
   background: #99701f;
