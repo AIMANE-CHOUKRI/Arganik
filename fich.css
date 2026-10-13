@@ -706,3 +706,104 @@ align-items: center;
   padding: 10px;
 }
 
+.title-etours {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color:#99701f;
+}
+
+.clien {
+  padding: 30px;
+}
+
+.des-communaute {
+  font-weight: 700;
+}
+
+.flex-prasent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.avis {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  background:#ebd5aa;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+}
+
+.etoile-v-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texture {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.profile {
+  padding: 10px;
+  border-radius: 50%;
+  background: #99701f;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gmail-profil {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.local h4{
+    font-weight: 600;
+}
+
+.achat {
+  background: #81f0bc;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.des-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profil-clien {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background:#ebd5aa ;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+}
+
+.profils-cliens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.clien {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .profils-cliens {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
