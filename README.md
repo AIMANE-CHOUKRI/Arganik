@@ -8,14 +8,14 @@ Aimane Choukri (Scrum Master) :
 
 Aya Lamzoudi :
     - Header ,
-    - Accueil ;
+    - Nos produits ;
 
 Hamza Hakkache :
     - Footer ,
     - Contacte & Commande ;
 
 Meriame Essiass :
-    - Nos produits ;
+    - Accueil ;
 
 Aymane Chokri :
     - Fiche produit ;
