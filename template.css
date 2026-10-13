@@ -383,7 +383,7 @@ p {
   border: #F9F2E6 2px solid;
   border-radius: 10px;
   background-color: #F9F2E6;
-  padding: 1%;
+  padding: 3%;
   text-align: left;
 }
 #cardInfo b {
@@ -427,12 +427,17 @@ p {
 
 #buttonConsulter {
   background-color: #FDC659;
+  font-size: 1rem;
   color: #745200;
   border: none;
   border-radius: 10px;
   padding: 1vw;
   height: 4vw;
 }                 
+#buttonConsulter b {
+  font-size: 1rem;
+  font-weight: 500;
+}
 #imgButtonConsulter {
   text-align: center;
 }
