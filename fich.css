@@ -331,6 +331,7 @@ align-items: center;
   align-items: center;
   gap: 10px;
   font-weight: 600;
+  flex-wrap: wrap;
 }
 
 .accueil-icon {
@@ -341,6 +342,7 @@ align-items: center;
 
 .section-fich {
   padding: 0 40px;
+  width: 100%;
 }
 
 .fich-produit {
@@ -353,6 +355,8 @@ align-items: center;
   display: flex;
   gap: 40px;
   margin-top: 40px;
+  flex-wrap: wrap;
+  flex: 1;
 }
 
 .container-image-hook {
@@ -361,6 +365,7 @@ align-items: center;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  flex: 1;
 }
 
 .space-hv {
@@ -369,7 +374,6 @@ align-items: center;
 
 .hook-img {
   width: 1200px;
-  margin-left: -300px;
   height: 100vh;
 }
 
@@ -456,6 +460,7 @@ align-items: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex: 1;
 }
 
 .info2-1 {
@@ -531,6 +536,12 @@ align-items: center;
   font-size: 0.8rem;
   border: none;
   cursor: pointer;
+}
+
+.etoile {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .etoile img{
@@ -686,3 +697,12 @@ align-items: center;
   font-weight: 500;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
 }
+
+.padding {
+  padding: 30px;
+}
+
+.padding2 {
+  padding: 10px;
+}
+
