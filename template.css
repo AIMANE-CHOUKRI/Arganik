@@ -39,7 +39,6 @@ header .headercontainer {
 }
 
 .headercontainer .tete {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +56,7 @@ header .headercontainer {
 }
 
 .navbar ul {
-   display: flex;
+    display: flex;
     background-color: white;
     color: black;
     justify-content: space-between;
@@ -117,10 +116,6 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
 }
 
 .footer {
@@ -325,29 +320,45 @@ align-items: center;
   font-weight: bold;
   white-space: nowrap;
 }
-
+/* Contenu Traçabilité */
 #titre {
     justify-items: center;
-    background-color: lightpink;
+    justify-content: center;
+    background-image: linear-gradient(#F9F2E6, #f9f1e2);
     text-align: center;
 }
 #titre span {
     /* justify-items: center;
     text-align: center; */
 }
-#titre h1 {
-    font-family: Playfair Display;
+:root {
+  --font-headline: 'Playfair Display', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 }
+h1,h2,h3,h4 {
+    font-family: var(--font-headline);
+}
+p {
+  font-family: var(--font-body);
+}
+
 #titre p {
     font-family: Plus Jakarta Sans;
 }
 #minicard img {
-    margin: auto;
+    /* margin-top: 2vw;
+    margin-bottom: 2vw; */
 }
 #minicard {
+    display: grid;
+    color: #795700;
+    grid-template-columns: 1vw 15vw;
+    grid-template-rows: 1vw;
+    gap: 0.5vw;
+    margin: 0 auto;
     font-weight: bold;
     font-size: 10px;
-    margin: auto;
+    width: fit-content;
     background-color: moccasin;
     padding: 1%;
     border-radius: 30px;
@@ -356,13 +367,83 @@ align-items: center;
     display: flex;
     flex-direction: column;
     padding: 2%;
-    background-color: white;
+    background-color: #FFF8EF;
     width: max-content;
-    border-radius: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 7px 7px #ebdfca;
+}
+#card-verif h3{
+  width: max-content;
+}
+#card-verif b {
+  font-size: 1vw;
+  width: max-content;
+}
+#cardInfo {
+  border: #F9F2E6 2px solid;
+  border-radius: 10px;
+  background-color: #F9F2E6;
+  padding: 1%;
+  text-align: left;
+}
+#cardInfo b {
+  font-size: 1.30vw;
+  font-family: Plus Jakarta Sans;
+}
+#card-verif p {
+  color: #636761;
+}
+#minicard img {
+  height: 1vw;
+}
+#titleTraca {
+  padding: 3vw;
+  font-size: large;
+}
+#titleTraca h1 {
+  color: #183324;
+}
+#spanExtra {
+  color: #6B6F67;
+  float: right;
+  padding: 0.3vw;
+  background-color: #F4EDE1;
+  border-radius: 10px;
+  margin: 1vw;
+}
+#cardInfo span b {
+  color: #474a44;
+}
+#cardInfo img {
+  height: 1vw;
 }
 #imgGlass {
-    width: 5vw;
-    background-color: turquoise;
-    border-radius: 100%;
-    padding: 2%;
+  height: fit-content;
+  width: fit-content;
+  background-color: #CAE9D4;
+  border-radius: 100%;
+  padding: 2%;
+}
+
+#buttonConsulter {
+  background-color: #FDC659;
+  color: #745200;
+  border: none;
+  border-radius: 10px;
+  padding: 1vw;
+  height: 4vw;
+}                 
+#imgButtonConsulter {
+  text-align: center;
+}
+#inputQr {
+  height: 4vw;
+  border: none;
+  padding: 1vw;
+  margin-bottom: 1vw;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 5px #ebdfca;
+}
+#spanConsulter {
+  margin-top: 1vw;
 }

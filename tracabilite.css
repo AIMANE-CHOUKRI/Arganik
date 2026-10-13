@@ -1,8 +1,10 @@
+@import url('https://googleapis.com');
 #titre {
     justify-items: center;
     background-color: lightpink;
     text-align: center;
 }
+
 #titre span {
     /* justify-items: center;
     text-align: center; */
@@ -33,7 +35,7 @@
     border-radius: 30px;
 }
 #imgGlass {
-    width: 5vw;
+    width: 3vw;
     background-color: turquoise;
     border-radius: 100%;
     padding: 2%;
