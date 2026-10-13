@@ -13,13 +13,13 @@
 
 <body>
     <!-- start header -->
-    <header>
+    <header class="animation-up">
         <div class="headercontainer">
             <div class="info">
               <p>Livraison offerte au Maroc dès 300 MAD • Coopérative 100% solidaire et biologique certifée</p>
             </div>
             <div class="tete">
-                <a href="#accueil" class="logo"><img src="img/logo/arganik-logo.svg" alt="logo" loading="lazy"></a>
+                <a href="#accueil" class="logo"><img src="/img/logo/arganik-logo.png" alt="logo" loading="lazy"></a>
 
                 <nav class="navbar">
                     <ul class="menu">
@@ -29,9 +29,19 @@
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
+
+                <nav class="burger-menu" hidden>
+                    <ul class="menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="" class="lien-actif">Nos produits</a></li>
+                        <li><a href="">Tracabilité</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="button-menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
                 <div class="profile">
                    <button><i class="fa-solid fa-cart-shopping"></i></button>
-                   <img src="img/divers/avatar-utilisateur.jpg" alt="profile picture" loading="lazy">
+                   <img src="/img/divers/avatar-utilisateur.jpg" alt="profile picture" loading="lazy">
                 </div>
             </div>
         </div>
@@ -190,12 +200,12 @@
 
     <div class="space-hv"></div>
 
-    <article class="bg-[#f3ead6] rounded-lg padding flex flex-col gap-3">
+    <article class="bg-[#f3ead6] rounded-lg p-4 flex flex-col gap-3">
         <h3 class="text-[#a47a2c] text-sm font-bold">GUIDE BO TANIQUE & PRATIQUE</h3>
         <p class="font-bold">Secrets de fabrication et rituel d'application</p>
 
         <details class="bg-gray-300 padding2 rounded-lg ">
-            <summary class="font-bold ">Description & Propriétés dermatologiques</summary>
+            <summary class="font-bold">Description & Propriétés dermatologiques</summary>
             <p>L huile d'argan cosmétique Arganik est réputée pour sa teneur exceptionnelle en stérols naturels et en polyphénols, des antioxydants
                puissants qui neutralisent les radicaux libres responsables du vieillissement cutané.</p>
                
@@ -498,10 +508,10 @@ coopérative ! »</p>
 
     
     <div class="certifications">
-      <div class="icon1"><img src="icons/certifie.svg" alt="icon"> &nbsp; CERTIFIÉ BIOLOGIQUE MAROC</div>
-      <div class="icon2"><img src="icons/feuille-eco.svg" alt="icon"> &nbsp; ECOCERT COSMÉTIQUE NATUREL</div>
-      <div class="icon3"> <img src="icons/diversite.svg" alt="icon">&nbsp; COMMERCE ÉQUITABLE SOLIDAIRE</div>
-      <div class="icon4"><img src="icons/coche.svg" alt="icon"> &nbsp; IGP ARGANE DU SOUSS</div>
+      <div class="icon1"><img src="/icons/certifie.svg" alt="icon"> &nbsp; CERTIFIÉ BIOLOGIQUE MAROC</div>
+      <div class="icon2"><img src="/icons/feuille-eco.svg" alt="icon"> &nbsp; ECOCERT COSMÉTIQUE NATUREL</div>
+      <div class="icon3"> <img src="/icons/diversite.svg" alt="icon">&nbsp; COMMERCE ÉQUITABLE SOLIDAIRE</div>
+      <div class="icon4"><img src="/icons/coche.svg" alt="icon"> &nbsp; IGP ARGANE DU SOUSS</div>
     </div>
 
     <div class="footer-bottom">
@@ -517,5 +527,5 @@ coopérative ! »</p>
 </footer>
 <!-- end footer -->
 </body>
-
+<script src="script.js"></script>
 </html>
