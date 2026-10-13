@@ -327,4 +327,110 @@ align-items: center;
 }
 
 
+.back_img{
+    background-image: linear-gradient(to right, rgba(22, 51, 32, 0.9), rgba(14, 15, 14, 0.5)) ,
+    url("img/hero/accueil-hero-cooperatrices.jpg"); 
+    background-repeat: no-repeat;
+    backface-visibility: visible;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    padding: 6px 20px;
+    position:absolute;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: auto;
+    height: 100%;
+}
+h1 .diffcolor{
+    color: rgb(240, 215, 156);
+    font-style: italic ;
+    font-size: 2
+    px;
+}
+h1{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.ic1{
+    width: 8px;
+    filter: invert(83%) sepia(19%) saturate(501%)
+            hue-rotate(350deg) brightness(99%) contrast(91%);
+    padding: 2;
+}
+#disp_right{
+   padding-left: 2px;
+   position: fixed;
+   padding-top: 25px;
+   padding-bottom: 20px;
+}
+
+ p{
+    font-size: 8px;
+    color:rgb(210, 210, 194);
+     font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.pet{
+    font-size: 6px;
+    color:rgb(249, 217, 175) ;
+     font-family: 'Helvetica Neue', Arial, sans-serif;
+     font-weight: bold;
+}
+
+.aborder{
+    height: 12px;
+    width: 161px;
+    border-left: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1px;
+    border-style: none;
+    border-radius: 10px;
+    background-color:rgb(236, 201, 155,0.2);
+}
+.il-s1{
+    display: flex;
+    gap: 4px;
+}
+.sameicone{
+    display: flex;
+    gap: 12px;
+}
+
+button{
+    height: 21;
+    width: 101;
+    border-style: none;
+    border-radius: 4px;
+    background-color: rgb(32, 65, 43);
+    font-size: 6px;
+    font-weight: 300;
+    color: rgba(156, 179, 164, 0.8);
+    font-family: 'Inter', sans-serif;
+}
+.button{
+    display: flex;
+    gap: 6px;
+}
+.button > .button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgb(230, 230, 220,0.2);
+}
+.flech{
+    width: 10px;
+    filter: brightness(0) invert(1);
+}
+.sameicone > div{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
 
