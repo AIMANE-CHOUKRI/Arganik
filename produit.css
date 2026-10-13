@@ -154,9 +154,11 @@ aside {
     background: rgb(228 220 220 / 49%);
     border-radius: 10px;
 }
- label input:checked{
-      accent-color: #173728; 
+
+label input:checked {
+    accent-color: #173728;
 }
+
 .productinfo ul li span {
     padding-left: 5px;
 }
@@ -173,9 +175,6 @@ aside {
     gap: 10px;
     PADDING: 16px;
     font-size: 12px;
-}
-#last{
-    gr
 }
 
 .prodectformat h5 {
@@ -260,9 +259,11 @@ article .info {
     padding-top: 5px;
     border-radius: 6px;
 }
+
 .eye i.fa-regular.fa-eye {
     padding-right: 5px;
 }
+
 .prix p span {
     font-weight: bold;
     font-size: 15px;
