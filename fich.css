@@ -801,9 +801,77 @@ align-items: center;
   gap: 15px;
 }
 
+.auter-produit {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  flex: 1;
+}
+
+.barbarie {
+  width: 300px;
+}
+
+.info-auter-produit {
+  background: #e9eae6;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.des-auter-produit {
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 600;
+}
+
+.title-auter-produit {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.prix-auter-produit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prix-auter-produit span {
+  font-weight: 700;
+  color: #173728;
+  font-size: 1.1rem;
+}
+
+.prix-auter-produit button {
+  padding: 8px;
+  background-color: rgb(233, 208, 154);;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+}
+
+.section-auter-produit {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
 @media (max-width: 768px) {
   .profils-cliens {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
+  }
+
+  .section-auter-produit {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auter-produit {
+    flex: 1;
   }
 }
