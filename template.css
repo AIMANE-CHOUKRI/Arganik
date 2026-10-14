@@ -26,7 +26,7 @@ header .headercontainer {
     height: 100px;
     background-color: rgb(247, 243, 243);
     overflow: hidden;
-
+    margin-top: -1.30vw;
 }
 
 .headercontainer .info {
@@ -35,7 +35,6 @@ header .headercontainer {
     background-color: #173728;
     font-size: 2vh;
     text-align: center;
-
 }
 
 .headercontainer .tete {
@@ -328,6 +327,7 @@ align-items: center;
     justify-content: center;
     background-image: linear-gradient(#F9F2E6, #f9f1e2);
     text-align: center;
+    padding-bottom: 7vw;
 }
 
 :root {
@@ -435,11 +435,14 @@ p {
   border-radius: 10px;
   padding: 1vw;
   height: 4vw;
-}                 
-#buttonConsulter b {
+} #buttonConsulter b {
   font-size: 1rem;
   font-weight: 500;
+} #buttonConsulter:hover {
+  cursor: pointer;
+  background-color: #fdce70;
 }
+
 #imgButtonConsulter {
   text-align: center;
 }
@@ -451,7 +454,10 @@ p {
   margin-bottom: 1vw;
   border-radius: 6px;
   box-shadow: inset 0px 0px 5px #ebdfca;
+} #inputQr:hover {
+  box-shadow: inset #ffe3bf 0px 0px 10px;
 }
+
 #spanConsulter {
   order: 2;
   display: grid;
@@ -487,3 +493,9 @@ p {
   display: grid;
   grid-template-rows: auto;
 }
+
+/* ---____________ Partie Rituel de Fabrication ____________--- */
+#sectionRituel {
+  background-image: linear-gradient(#FFF8EF, #ffefdb);
+}
+
