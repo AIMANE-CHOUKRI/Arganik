@@ -354,11 +354,12 @@ p {
     margin: 0 auto;
     font-weight: bold;
     font-size: 10px;
-    width: fit-content;
+    width: max-content;
     background-color: moccasin;
     padding: 1%;
     border-radius: 30px;
 }
+
 #card-verif {
     display: flex;
     flex-direction: column;
@@ -496,6 +497,12 @@ p {
 
 /* ---____________ Partie Rituel de Fabrication ____________--- */
 #sectionRituel {
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
   background-image: linear-gradient(#FFF8EF, #ffefdb);
 }
-
+.artic {
+  display: flex;
+  gap: 10px;
+}
