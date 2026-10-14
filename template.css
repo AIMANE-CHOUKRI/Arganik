@@ -323,6 +323,7 @@ align-items: center;
 /* Contenu Traçabilité */
 
 #titre {
+    padding-top: 2vw;
     justify-items: center;
     justify-content: center;
     background-image: linear-gradient(#F9F2E6, #f9f1e2);
@@ -394,12 +395,16 @@ p {
 #minicard img {
   height: 1vw;
 }
-#titleTraca {
+.titleTraca {
   padding: 3vw;
   font-size: large;
 }
-#titleTraca h1 {
+.titleTraca h1 {
   color: #183324;
+  margin-bottom: 1vw;
+}
+.titleTraca p {
+  color: rgb(64, 64, 64);
 }
 #spanExtra {
   color: #6B6F67;
@@ -473,10 +478,11 @@ p {
   flex-direction: row;
 }
 .verif-header h2 {
-  margin-left: -5vw;
+  font-weight: 100;
+  margin-left: -6vw;
 }
 .verif-header p {
-  margin-left: 1vw;
+  margin-left: 0.5vw;
 }
 
 /* Colonnes d'infos */
@@ -496,6 +502,7 @@ p {
 }
 
 /* ---____________ Partie Rituel de Fabrication ____________--- */
+
 #sectionRituel {
   justify-items: center;
   justify-content: center;
@@ -505,4 +512,24 @@ p {
 .artic {
   display: flex;
   gap: 10px;
+}
+
+#spanRituel {
+  color: #7C5700;
+  font-size: 0.9vw;
+}
+
+.titleRituel {
+  padding: 3vw;
+  padding-top: 5vw;
+  font-size: large;
+}
+.titleRituel h1 {
+  color: #183324;
+  margin-bottom: 1vw;
+}
+.titleRituel p {
+  color: rgb(64, 64, 64);
+  font-size: medium;
+  margin-top: -1vw;
 }
