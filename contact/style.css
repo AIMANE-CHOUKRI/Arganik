@@ -123,39 +123,21 @@ a {
 }
 
 
+
 .button-menu {
     display: none;
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    color: #222;
+    position: relative;
+    z-index: 10000;
 }
 
 .burger-menu {
     position: fixed;
     inset: 0;
-    width: 100%;
-    height: 100vh;
-    height: 100dvh;
-    background-color: #fff;
-    z-index: 999;
-    padding: 100px 30px 30px;
-    overflow-y: auto;
-    
-}
-
-.button-menu {
-    position: relative;
-    z-index: 1000;
-    display: none;
-    border: none;
-    background: transparent;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #222;
-    
-}
-
-.burger-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100dvh;
     background: white;
@@ -180,12 +162,11 @@ a {
     color: #173728;
 }
 
-.button-menu {
-    display: none;
-    border: none;
-    background: transparent;
-    font-size: 1.8rem;
-    cursor: pointer;
+.burger-menu .menu a.lien-actif {
+    background: #173728;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
 }
 
 
@@ -1291,40 +1272,6 @@ html, body {
     }
 }
 
-
-@media (max-width: 600px) {
-
-    .headercontainer .info {
-        font-size: 12px;
-        padding: 6px 10px;
-        line-height: 1.4;
-    }
-
-    .headercontainer .tete {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tete a {
-        padding-left: 0;
-    }
-
-    .navbar ul {
-        font-size: 14px;
-        width: 100%;
-    }
-
-    .profile {
-        padding-right: 0;
-    }
-
-    .profile button {
-        position: static;
-        top: 0;
-        right: 0;
-    }
-}
-
 @media (max-width: 768px) {
 
     body {
@@ -1518,29 +1465,8 @@ html, body {
     }
 }
 
-@media (max-width: 768px) {
-    .headercontainer .tete {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        width: auto;
-        padding: 0 15px;
-    }
-
-    .logo {
-        margin-right: auto;
-    }
-
-    .button-menu {
-        display: block;
-        margin-left: auto;
-    }
-}
 
 @media (max-width: 768px) {
-
     header .headercontainer {
         overflow: visible;
     }
@@ -1551,29 +1477,21 @@ html, body {
         justify-content: space-between;
         align-items: center;
         flex-wrap: nowrap;
+        height: auto;
+        padding: 0 15px;
     }
 
     .logo {
         margin-right: auto;
     }
 
-    .button-menu {
-        display: block;
-        position: relative;
-        z-index: 10000;
-        margin-left: auto;
-    }
-
     .navbar,
     .profile {
         display: none;
     }
-} 
-@media (max-width: 768px) {
-    .burger-menu .menu a.lien-actif {
-        background-color: #173728;
-        color: rgb(224, 122, 14);
-        padding: 10px 15px;
-        border-radius: 8px;
+
+    .button-menu {
+        display: block;
+        margin-left: auto;
     }
 }
