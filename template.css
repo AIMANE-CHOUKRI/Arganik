@@ -635,11 +635,18 @@ p {
   display: flex;
   justify-items: space-around;
   gap: 3vw;
+  width: fit-content;
+} #divArticles article {
+  border-radius: 20px;
   background-color: #EFEFEF;
+  width: min-content;
+  box-shadow: 0px 2px 20px rgb(224, 195, 144);
 }
 
 .imgCard {
-  width: 27vw;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: max-content;
   height: 16vw;
 }
 
@@ -658,6 +665,7 @@ p {
   font-weight: 200;
   font-size: 1.4vw;
   font-family: var(--font-body);
+  width: max-content;
 } .divInfo span {
   font-family: var(--font-body);
   font-weight: bold;
@@ -665,6 +673,29 @@ p {
 } .divInfo p {
   font-weight: 200;
 }
-.spanPersonneInfo {
+.spanLocale {
+  width: max-content;
   color: #434343;
+}
+.spanPersonneInfo {
+  display: flex;
+  color: #434343;
+  align-items: center;
+  padding-top: 2vw;
+  
+} .spanPersonneInfo p {
+  font-size: 0.9088vw;
+  color: #252525;
+  width: max-content;
+  font-weight: 600;
+} .spanPersonneInfo img {
+  margin-right: 5px;
+}
+
+.spanQuote {
+  justify-content: center;
+  background-color: #E1E1E1;
+  padding: 1.3vw;
+  grid-column: span 2;
+  border-radius: 1vw;
 }
