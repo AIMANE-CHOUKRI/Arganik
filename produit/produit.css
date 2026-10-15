@@ -150,7 +150,7 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     margin-left: 45px;
-    width: 90%;
+    width: 100%;
 }
 
 aside {
@@ -434,6 +434,8 @@ article .info {
 
 /* css of the media */
 
+/* Pour les tablettes */
+
 
 @media (max-width: 768px) {
 
@@ -619,7 +621,8 @@ article .info {
     }
 
     aside {
-        width: 85%;
+        width: 65%;
+        margin-left: 8%;
 
     }
 
