@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arganik Coopirative du souss</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    <!-- start header -->
+    <header>
+        <div class="headercontainer animation">
+            <div class="info">
+              <p>Livraison offerte au Maroc dès 300 MAD • Coopérative 100% solidaire et biologique certifée</p>
+            </div>
+            <div class="tete">
+                <a href="#accueil" class="logo"><img src="../img/logo/arganik-logo.svg" alt="logo" loading="lazy"></a>
+
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="" >Nos produits</a></li>
+                        <li><a href="">Tracabilité</a></li>
+                        <li><a href="" class="lien-actif" >Contact</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="burger-menu" hidden>
+                    <ul class="menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="" >Nos produits</a></li>
+                        <li><a href="">Tracabilité</a></li>
+                        <li><a href="" class="lien-actif">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="button-menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+                <div class="profile">
+                   <button><i class="fa-solid fa-cart-shopping"></i></button>
+                   <img src="../img/divers/avatar-utilisateur.jpg" alt="profile picture" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- end header -->
+     
+     <!-- start of contact page -->
+<main class="page">
+    <header class="hero">
+      <span class="eyebrow"><img src="../icons/feuille-eco.svg" alt="icon"> Circuit direct producteur &amp; terroir souss</span>
+      <h1>Contactez-nous &amp; Commandes<br />sur-mesure</h1>
+      <p>
+        Commandes directes auprès de nos artisans, paniers de terroirs personnalisés,
+        coffrets de cérémonie ou partenariats professionnels éthiques. Nous mettons un
+        point d’honneur à vous répondre avec attention.
+      </p>
+    </header>
+
+    <div class="layout">
+      <section class="panel form-panel" aria-labelledby="form-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="form-title">Envoyez-nous un message</h2>
+            <p>Remplissez ce formulaire pour une commande ou une question spécifique.</p>
+          </div>
+          <span class="heading-icon" aria-hidden="true"><img src="../icons/edition.svg" alt="icon"></span>
+        </div>
+
+        <form id="contact-form">
+          <div class="field">
+            <label for="full-name">Nom complet <span class="required">*</span></label>
+            <input id="full-name" name="fullName" type="text" placeholder="Ex: Fatima Zahra El Amrani" autocomplete="name" required />
+          </div>
+
+          <div class="fields-2">
+            <div class="field">
+              <label for="email">Adresse email <span class="required">*</span></label>
+              <input id="email" name="email" type="email" placeholder="nom@domaine.ma" autocomplete="email" required />
+              <p class="hint">Nous répondons sous 24 heures</p>
+            </div>
+            <div class="field">
+              <label for="phone">Numéro de téléphone <span class="required">*</span></label>
+              <input id="phone" name="phone" type="tel" placeholder="+212 6 XX XX XX XX" autocomplete="tel" required />
+              <p class="hint">Indicatif WhatsApp ou appel direct</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="destination">Ville &amp; Pays de destination <span class="required">*</span></label>
+            <input id="destination" name="destination" type="text" placeholder="Ex: Casablanca (Maroc), Lyon (France), Montréal (Canada)" required />
+          </div>
+
+          <div class="field">
+            <label for="request-type">Type de demande <span class="required">*</span></label>
+            <select id="request-type" name="requestType" required>
+              <option value="" selected disabled>Veuillez choisir une option...</option>
+              <option>Commande personnalisée</option>
+              <option>Panier de terroir</option>
+              <option>Coffret de cérémonie</option>
+              <option>Demande professionnelle</option>
+              <option>Question générale</option>
+            </select>
+          </div>
+
+          <fieldset class="field">
+            <legend class="legend">Produits souhaités (plusieurs choix possibles)</legend>
+            <div class="product-grid">
+              <label class="check-option"><input type="checkbox" name="products" value="Huile d'argan cosmétique bio" /> Huile d’argan cosmétique bio</label>
+              <label class="check-option"><input type="checkbox" name="products" value="Huile d'argan culinaire torréfiée" /> Huile d’argan culinaire torréfiée</label>
+              <label class="check-option"><input type="checkbox" name="products" value="Amlou traditionnel aux amandes" /> Amlou traditionnel aux amandes</label>
+              <label class="check-option"><input type="checkbox" name="products" value="Miel pur d'oranger et thym du Souss" /> Miel pur d’oranger &amp; thym du Souss</label>
+              <label class="check-option"><input type="checkbox" name="products" value="Savons saponifiés à froid & soins du hammam" /> Savons saponifiés à froid &amp; soins du hammam</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="message">Message ou précisions de commande <span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Volumes désirés (litres, coffrets, contenants 100ml ou 250ml), date limite souhaitée, ou questions spécifiques..." required></textarea>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span>J’accepte que mes données soient traitées par la coopérative Aghanik pour donner suite à ma demande. Vos informations ne seront jamais cédées à des tiers.</span>
+          </label>
+
+          <div id="form-message" class="form-message" role="status">
+            Votre formulaire est valide. Pour recevoir les demandes, connectez ce formulaire à votre service email ou à votre backend.
+          </div>
+          <button class="submit-button" type="submit"><span aria-hidden="true">➤</span> Envoyer ma demande</button>
+        </form>
+      </section>
+
+      <aside class="sidebar" aria-label="Informations de contact">
+        <section class="panel side-panel">
+          <div class="business-heading">
+            <span class="business-icon" aria-hidden="true"><img src="../icons/boutique.svg" alt=""></span>
+          </div>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <span class="contact-symbol" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+              <div><strong>Adresse physique de l’atelier</strong><p>Coopérative Féminine Arganik<br />Douar Tagadirt, Route de Imouzzer<br />Région Souss-Massa, 80000 Agadir, Maroc</p></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-symbol" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+              <div><strong>Ligne directe atelier</strong><p><a href="tel:+212628549210">+212 (0) 6 28 54 92 10</a></p></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-symbol" aria-hidden="true"><i class="fa-regular fa-message"></i></span>
+              <div><strong>WhatsApp Service Client</strong><p><a href="https://wa.me/212612345678">+212 (0) 6 12 34 56 78</a></p></div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-symbol" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+              <div><strong>Courriels</strong><p>Formations : <a href="mailto:contact@arganik-coop.ma">contact@arganik-coop.ma</a><br />Commandes : <a href="mailto:commandes@arganik-coop.ma">commandes@arganik-coop.ma</a></p></div>
+            </div>
+          </div>
+
+          <div class="hours-box">
+            <span aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
+            <div><strong>Horaires d’accueil &amp; visites</strong>Lundi au samedi : 08h30–18h00<br />Fermé le dimanche et jours de fête religieuse.</div>
+          </div>
+        </section>+
+
+        <section class="map-card" aria-label="Localisation de l'atelier">
+              <div class="map-visual">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d110126.82970646169!2d-9.59998979304771!3d30.39459091692053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDouar%20Tagadirt%2C%20Agadir!5e0!3m2!1sfr!2sma!4v1791917093603!5m2!1sfr!2sma"
+                width="100%"
+                height="220"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <div class="map-footer">
+            <span><i class="fa-regular fa-clock"></i> À 35 min au nord-est du centre d’Agadir</span>
+            <a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d110126.82970646169!2d-9.59998979304771!3d30.39459091692053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDouar%20Tagadirt%2C%20Agadir!5e0!3m2!1sfr!2sma!4v1791917093603!5m2!1sfr!2sma" target="_blank" rel="noopener noreferrer">ACCÈS FLÉCHÉ ↗</a>
+          </div>
+        </section>
+
+        <section class="shipping-card">
+          <h3><span aria-hidden="true"><img src="../icons/livraison.svg" alt=""></span> Modalités d’expédition</h3>
+          <p><strong>Maroc Express (24h/48h) :</strong> Livraison directe à domicile ou en point relais sécurisé via Amana &amp; CTM Messagerie. Suivi en ligne par SMS.</p>
+          <p><strong>International (Europe &amp; Canada) :</strong> Emballages isothermes protégés anti-choc avec scellé de garantie. Certificat phytosanitaire et traçabilité coopérative inclus.</p>
+        </section>
+      </aside>
+    </div>
+<section class="faq-section">
+
+    <div class="faq-header">
+        <span class="faq-label">FOIRE AUX QUESTIONS</span>
+        <h2>Questions fréquentes</h2>
+        <p>Tout ce que vous devez savoir avant de passer commande.</p>
+    </div>
+
+    <div class="faq-list">
+
+        <details class="faq-item">
+            <summary><em>Quels sont les délais et tarifs de livraison ?</em></summary>
+            <p>Les délais de livraison varient généralement entre 24 et 72 heures ouvrables, selon votre ville. Les frais de livraison sont calculés en fonction de votre adresse et vous seront communiqués lors de la confirmation de votre commande.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary><em>Comment conserver au mieux l'huile d'argan cosmétique et culinaire ?</em></summary>
+        </details>
+
+        <details class="faq-item">
+            <summary><em>Quels moyens de paiement acceptez-vous (en ligne et à la livraison) ?</em></summary>
+        </details>
+
+        <details class="faq-item">
+            <summary><em>Proposez-vous des tarifs préférentiels pour les commandes en gros ou cadeaux d'entreprise ?</em></summary>
+        </details>
+
+    </div>
+
+    <div class="faq-contact">
+        <div class="faq-contact-text">
+            <h3>Vous préférez échanger par téléphone ?</h3>
+            <p>Notre conseillère coopérative est à votre écoute du lundi au samedi.</p>
+        </div>
+
+        <div class="faq-buttons">
+            <a href="https://wa.me/2126012345678" target="_blank"
+               rel="noopener noreferrer" class="faq-whatsapp">
+                <i class="fa-regular fa-message"></i>
+                Démarrer sur WhatsApp
+            </a>
+
+            <a href="tel:+212628549210" class="faq-phone">
+                <i class="fa-solid fa-phone"></i>
+                Appeler l'atelier
+            </a>
+        </div>
+    </div>
+
+</section>
+
+  </main>
+<!-- end of contact page  -->
+    <!-- start footer -->
+     <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-top">
+
+      <div class="footer-about">
+        <a href="#"><img src="../img/logo/arganik-logo.svg" alt="logo"></a>
+
+        <p>
+          Héritage séculaire de la Vallée du Souss. Notre
+          coopérative féminine perpétue l'extraction artisanale
+          de l'huile d'argan pure certifiée biologique, garantissant
+          une juste rétribution à plus de 60 artisanes locales.
+        </p>
+
+        <h4>HORAIRES D'OUVERTURE</h4>
+        <p class="hours"><i class="fa-regular fa-clock"></i> &nbsp; Lundi - Samedi : 08h30 - 18h00</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>NAVIGATION & PRODUITS</h3>
+        <a href="#">Accueil & Coopérative</a>
+        <a href="#">Huile d'Argan Cosmétique</a>
+        <a href="#">Huile Culinaire Torréfiée</a>
+        <a href="#">Amlou Traditionnel aux Amandes</a>
+        <a href="#">Savons Purs & Soins Botaniques</a>
+        <a href="#">Traçabilité & Cartographie</a>
+        <a href="#">Engagements & Impact Féminin</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>ATELIER & CONTACT</h3>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          &nbsp; Route d'Imouzzer,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Région Souss-Massa,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Agadir, Maroc
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          &nbsp; +212 (0)5 28 84 92 10
+        </p>
+
+        <p>
+          <i class="fa-regular fa-envelope"></i>
+          &nbsp; contact@arganik-<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coop.ma
+        </p>
+
+
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <i class="fa-solid fa-camera"></i>
+          </a>
+          <a href="#" aria-label="Website">
+            <i class="fa-solid fa-earth-americas"></i>
+          </a>  
+          <a href="#" aria-label="Messages">
+            <i class="fa-regular fa-message"></i>
+          </a>
+          <a href="#" aria-label="Bookmark">
+            <i class="fa-regular fa-bookmark"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>LETTRE DU TERROIR</h3>
+
+        <p>
+          Recevez nos carnets de récolte, nouvelles
+          de la coopérative et éditions limitées.
+        </p>
+
+        <form>
+          <input type="email" placeholder="Votre adresse courriel..." required>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+
+    </div>
+
+    
+    <div class="certifications">
+      <div class="icon1"><img src="../icons/certifie.svg" alt="icon"> &nbsp; CERTIFIÉ BIOLOGIQUE MAROC</div>
+      <div class="icon2"><img src="../icons/feuille-eco.svg" alt="icon"> &nbsp; ECOCERT COSMÉTIQUE NATUREL</div>
+      <div class="icon3"> <img src="../icons/diversite.svg" alt="icon">&nbsp; COMMERCE ÉQUITABLE SOLIDAIRE</div>
+      <div class="icon4"><img src="../icons/coche.svg" alt="icon"> &nbsp; IGP ARGANE DU SOUSS</div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Coopérative Féminine Arganik. Tous droits réservés.</p>
+
+      <div class="legal-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions de vente</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+</body>
+<script src="script.js"></script>
+</html>
