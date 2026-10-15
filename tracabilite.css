@@ -111,12 +111,6 @@ a {
 }
 
 /* css of footer  */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .footer {
   background: #f5eee1;
   color: #35443a;
@@ -266,32 +260,12 @@ a {
 }
 
 .certifications div {
+  display: flex;
+  gap: 5px;
+  align-items: center;
   font-size: 10px;
   font-weight: bold;
   white-space: nowrap;
-}
-.icon1{
-display: flex;
-gap:5px;
-align-items: center;
-}
-
-.icon2{
-display: flex;
-gap:5px;
-align-items: center;
-}
-
-.icon3{
-display: flex;
-gap:5px;
-align-items: center;
-}
-
-.icon4{
-display: flex;
-gap:5px;
-align-items: center;
 }
 
 .footer-bottom {
@@ -331,6 +305,7 @@ align-items: center;
     padding-bottom: 7vw;
 }
 
+/* Variables & typographie */
 :root {
   --font-headline: 'Playfair Display', serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
@@ -366,11 +341,7 @@ p {
     border-radius: 15px;
     box-shadow: 0px 7px 7px #ebdfca;
 }
-#card-verif h3{
-  width: max-content;
-}
 #card-verif b {
-  font-size: 1vw;
   width: max-content;
 }
 #cardInfo {
@@ -445,9 +416,6 @@ p {
   background-color: #fdce70;
 }
 
-#imgButtonConsulter {
-  text-align: center;
-}
 #inputQr {
   grid-column: 1;
   height: 4vw;
@@ -494,7 +462,6 @@ p {
 }
 .info-col-grid {
   display: grid;
-  grid-template-rows: auto;
 }
 
 /* ---____________ Partie Rituel de Fabrication ____________--- */
@@ -527,6 +494,7 @@ p {
   color: #7C5700;
 }
 
+/* Titre Rituel */
 .spanRituel {
   color: #7C5700;
   font-size: 0.9vw;
@@ -558,34 +526,24 @@ p {
   border-left: #E8E2D6 2px solid;
 }
 
-.cardEtapeB {
-  justify-content: center;
+/* Badges d'étape */
+.cardEtapeB,
+.cardEtapeO,
+.cardEtapeR {
   font-size: 0.9vw;
-  background-color: #CAE9D4;
   border-radius: 30px;
-  padding: 0.4vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding: 0.4vw 1vw;
+}
+.cardEtapeB {
+  background-color: #CAE9D4;
   color: #051F13;
 }
 .cardEtapeO {
-  justify-content: center;
-  font-size: 0.9vw;
   background-color: #FFDDA7;
-  border-radius: 30px;
-  padding: 0.4vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
   color: #5D4200;
 }
 .cardEtapeR {
-  justify-content: center;
-  font-size: 0.9vw;
   background-color: #FFDBCD;
-  border-radius: 30px;
-  padding: 0.4vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
   color: #7C2D07;
 }
 
@@ -594,13 +552,14 @@ p {
   box-shadow: 0px 0px 10px rgb(192, 164, 87);
 }
 
+/* ---____________ Partie Personnes ____________--- */
+
+/* Titre Personnes */
 #titlePersonnes {
   padding: 3vw;
-  padding-top: 3vw;
   font-size: large;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
 }
 #titlePersonnes h1 {
   color: #183324;
@@ -631,9 +590,9 @@ p {
   padding-bottom: 7vw;
 }
 
+/* Cartes coopératrices */
 #divArticles {
   display: flex;
-  justify-items: space-around;
   gap: 3vw;
   width: fit-content;
 } #divArticles article {
@@ -653,14 +612,15 @@ p {
 .divInfo {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto;
   text-align: left;
   padding: 2vw;
   gap: 1vw;
 } .divInfo h4 {
+  grid-row: 2;
   font-weight: 300;
   font-size: 1.7vw;
 } .divInfo h5 {
+  grid-row: 3;
   color: #434343;
   font-weight: 200;
   font-size: 1.4vw;
@@ -673,11 +633,16 @@ p {
 } .divInfo p {
   font-weight: 200;
 }
+.divInfo > span:first-child,
+.spanLocale {
+  grid-row: 1;
+}
 .spanLocale {
   width: max-content;
   color: #434343;
 }
 .spanPersonneInfo {
+  grid-row: 5;
   display: flex;
   color: #434343;
   align-items: center;
@@ -693,13 +658,14 @@ p {
 }
 
 .spanQuote {
+  grid-row: 4;
   justify-content: center;
   background-color: #E1E1E1;
   padding: 1.3vw;
   grid-column: span 2;
   border-radius: 1vw;
 }
-/* Partie Certification */
+/* ---____________ Partie Certification ____________--- */
 
 #sectionCertif {
   background-image: linear-gradient(#FFF8EF, #f9e8d1);
@@ -717,7 +683,6 @@ p {
 } 
 #sectionCertif p {
   font-size: 1.08vw;
-  font-weight: 400;
 }
 #sectionCertif img {
   height: 4.5vw;
@@ -732,6 +697,7 @@ p {
   box-shadow: 0px 0px 10px #b1e7c2;
 }
 
+/* Titre Certification */
 #titleCertif {
   justify-self: center;
   text-align: center;
@@ -746,26 +712,21 @@ p {
   font-weight: bold;
   font-size: 1vw;
 } 
-#divCards h2 {
-  font-size: 10vw;
-  padding: 1vw;
-}
-
+/* Cartes certifications */
 #divCards {
   display: flex;
-  justify-items: space-around;
-} #divCards h2 {
-  color : #183324;
+}
+#divCards h2 {
+  color: #183324;
   font-size: 1.7vw;
   font-weight: 300;
-} 
+  padding: 1vw;
+}
 .pContenu {
   color: #424842;
 }
 
 .spanCertif p {
   color: #7C5700;
-  font-weight: 1000;
-  font-size: 100vw;
   padding: 1vw;
 }
