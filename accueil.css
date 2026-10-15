@@ -327,6 +327,16 @@ align-items: center;
 }
 
 
+
+
+
+
+
+
+
+
+
+
 .back_img{
     background-image: linear-gradient(to right, rgba(22, 51, 32, 0.9), rgba(14, 15, 14, 0.5)) ,
     url("img/hero/accueil-hero-cooperatrices.jpg"); 
@@ -335,24 +345,30 @@ align-items: center;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    padding: 6px 20px;
-    position:absolute;
+    position:sticky;
     width: 100%;
     box-sizing: border-box;
     min-height: auto;
     height: 100%;
 }
-h1 .diffcolor{
-    color: rgb(240, 215, 156);
-    font-style: italic ;
-    font-size: 2
-    px;
+
+
+ .diffcolor{
+    color: rgb(248, 222, 163);
+    font-style: italic;
+    font-weight: 555;
 }
+
+
 h1{
-    color: aliceblue;
+    color: rgb(247, 249, 250);
     font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0%;
+    line-height: 1.1;
+    font-weight:550;
 }
+
 
 .ic1{
     width: 8px;
@@ -360,24 +376,26 @@ h1{
             hue-rotate(350deg) brightness(99%) contrast(91%);
     padding: 2;
 }
+
+
 #disp_right{
-   padding-left: 2px;
-   position: fixed;
-   padding-top: 25px;
-   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+   padding-left: 20px;
+   position:sticky;
+   padding-top: 26px;
+   padding-bottom: 26px;
 }
 
- p{
-    font-size: 8px;
-    color:rgb(210, 210, 194);
-     font-family: 'Helvetica Neue', Arial, sans-serif;
-}
+
 .pet{
     font-size: 6px;
-    color:rgb(249, 217, 175) ;
+    color:rgb(247, 217, 152) ;
      font-family: 'Helvetica Neue', Arial, sans-serif;
      font-weight: bold;
 }
+
 
 .aborder{
     height: 12px;
@@ -391,18 +409,23 @@ h1{
     border-radius: 10px;
     background-color:rgb(236, 201, 155,0.2);
 }
+
+
 .il-s1{
     display: flex;
     gap: 4px;
 }
+
+
 .sameicone{
     display: flex;
     gap: 12px;
 }
 
+
 button{
-    height: 21;
-    width: 101;
+    height: 21px;
+    width: 101px;
     border-style: none;
     border-radius: 4px;
     background-color: rgb(32, 65, 43);
@@ -411,10 +434,14 @@ button{
     color: rgba(156, 179, 164, 0.8);
     font-family: 'Inter', sans-serif;
 }
+
+
 .button{
     display: flex;
     gap: 6px;
 }
+
+
 .button > .button1{
     display: flex;
     align-items: center;
@@ -422,6 +449,8 @@ button{
     color: aliceblue;
     background-color: rgb(230, 230, 220,0.2);
 }
+
+
 .flech{
     width: 10px;
     filter: brightness(0) invert(1);
@@ -430,7 +459,62 @@ button{
     display: flex;
     align-items: center;
     gap: 3px;
+    font-size: 6px;
+    color: #d7dec8;;
 }
-
-
-
+.text_hueiles{
+  color: #d7dec8;
+  font-size: 8px;
+}
+/* css de deuxième section  */
+#sec_deux{
+  background-color: #f7f0e2;
+  display: flex;
+  flex-direction: column;
+  gap: 64px; ;
+}
+#article1{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  gap: 25px;
+}
+.cart{
+  padding-left: 12px;
+  background-color: #F7F8FA;
+  border: none;
+  border-radius: 10px;
+  box-shadow:0 5px 5px #10213c20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:8px ;
+}
+img{
+  width: 16px;
+  filter: invert(35%) sepia(31%) saturate(600%)
+            hue-rotate(2deg) brightness(88%) contrast(88%); 
+  
+}
+.box{
+  background-color:#f7f0e1 ;
+  width:  26px ;
+  height:26px ;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px #10213c20 ;
+  display: flex;
+  justify-content: center;
+}
+.num-gras{
+  font-weight:550;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 26px;
+}
+.ptit_titre{
+  font-weight:600;
+  font-size: small;
+}
+.para{
+  font-size: 8px;
+}
