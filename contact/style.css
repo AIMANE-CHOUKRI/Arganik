@@ -1,4 +1,3 @@
-/* css of header  */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,9 +12,14 @@ body {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    margin: 10px 15px;
+    background-color: #F7F8FA;
+}
 
-    
+/* header css */
+body > header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 
@@ -27,11 +31,12 @@ header .headercontainer {
     height: 100px;
     background-color: rgb(247, 243, 243);
     overflow: hidden;
+    left: 20px;
+    z-index: 1000;
 
 }
 
 .headercontainer .info {
-    margin-top:5px;
     color: white;
     background-color: #173728;
     font-size: 2vh;
@@ -58,7 +63,7 @@ header .headercontainer {
 }
 
 .navbar ul {
-   display: flex;
+    display: flex;
     background-color: white;
     color: black;
     justify-content: space-between;
@@ -76,30 +81,34 @@ header .headercontainer {
 
 }
 
-.profile button {
-    position: relative;
-    right: 10px;
-    top: -8px;
-    width: 32px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+
 
 .profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     padding-right: 25px;
 }
 
+.profile button {
+    position: static;
+    width: auto;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
 .profile img {
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .menu .lien-actif {
     padding: 5px;
     background-color: #173728;
-    color: rgb(240, 232, 217 ) ;
+    color: rgb(240, 232, 217);
     border-radius: 7px;
 
 }
@@ -112,6 +121,73 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+
+.button-menu {
+    display: none;
+}
+
+.burger-menu {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    background-color: #fff;
+    z-index: 999;
+    padding: 100px 30px 30px;
+    overflow-y: auto;
+    
+}
+
+.button-menu {
+    position: relative;
+    z-index: 1000;
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #222;
+    
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: white;
+    z-index: 9999;
+    padding: 120px 35px 30px;
+    overflow-y: auto;
+}
+
+.burger-menu[hidden] {
+    display: none;
+}
+
+.burger-menu .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.burger-menu .menu a {
+    display: block;
+    font-size: 20px;
+    color: #173728;
+}
+
+.button-menu {
+    display: none;
+    border: none;
+    background: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
 
 /* css of footer  */
 
@@ -958,7 +1034,7 @@ html, body {
     overflow-x: hidden;
 }
 
-img, iframe {
+ iframe {
     max-width: 100%;
     display: block;
 }
@@ -1246,5 +1322,258 @@ img, iframe {
         position: static;
         top: 0;
         right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        margin: 0;
+    }
+
+    header .headercontainer {
+        height: auto;
+    }
+
+    .headercontainer .tete {
+        height: auto;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 110px;
+        height: auto;
+    }
+
+    .headercontainer .info {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .navbar,
+    .profile {
+        display: none;
+    }
+
+    .button-menu {
+        display: block;
+    }
+
+    .section-fich {
+        padding: 0 15px;
+    }
+
+    .prasent-produit {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .container-image-hook {
+        width: 100%;
+        height: auto;
+    }
+
+    .hook-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .auter-img {
+        flex-wrap: wrap;
+    }
+
+    .auter-img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .info-produit {
+        padding: 10px;
+    }
+
+    .info2 {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .big-des {
+        font-size: 1.5rem;
+    }
+
+    .size-prix {
+        font-size: 1.5rem;
+    }
+
+    .livraion {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .profils-cliens {
+        grid-template-columns: 1fr;
+    }
+
+    .section-auter-produit {
+        justify-content: center;
+    }
+
+    .auter-produit {
+        width: 100%;
+        max-width: 350px;
+        flex: none;
+    }
+
+    .barbarie {
+        width: 100%;
+        height: auto;
+    }
+
+    .clien {
+        padding: 15px;
+    }
+
+    .padding {
+        padding: 15px;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .certifications {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+        padding: 15px;
+    }
+
+    .certifications div {
+        white-space: normal;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+    }
+
+    .legal-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    .headercontainer .tete {
+        margin: 8px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .button-menu {
+        font-size: 1.5rem;
+    }
+
+    .section-fich {
+        padding: 0 10px;
+    }
+
+    .big-des {
+        font-size: 1.3rem;
+    }
+
+    .info-prix {
+        gap: 5px;
+        padding: 8px;
+    }
+
+    .size-prix {
+        font-size: 1.3rem;
+    }
+
+    .btns {
+        gap: 5px;
+    }
+
+    .livraion1 {
+        padding: 8px;
+    }
+
+    .avis {
+        font-size: 0.7rem;
+    }
+
+    .footer {
+        padding: 25px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headercontainer .tete {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .button-menu {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header .headercontainer {
+        overflow: visible;
+    }
+
+    .headercontainer .tete {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .button-menu {
+        display: block;
+        position: relative;
+        z-index: 10000;
+        margin-left: auto;
+    }
+
+    .navbar,
+    .profile {
+        display: none;
+    }
+} 
+@media (max-width: 768px) {
+    .burger-menu .menu a.lien-actif {
+        background-color: #173728;
+        color: rgb(224, 122, 14);
+        padding: 10px 15px;
+        border-radius: 8px;
     }
 }

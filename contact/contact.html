@@ -15,27 +15,34 @@
 <body>
     <!-- start header -->
     <header>
-        <div class="headercontainer">
+        <div class="headercontainer animation">
             <div class="info">
               <p>Livraison offerte au Maroc dès 300 MAD • Coopérative 100% solidaire et biologique certifée</p>
-              
             </div>
             <div class="tete">
-                <a href="#accueil" class="logo"><img src="img/logo/arganik-logo.svg" alt="logo"></a>
+                <a href="#accueil" class="logo"><img src="../img/logo/arganik-logo.svg" alt="logo" loading="lazy"></a>
 
                 <nav class="navbar">
                     <ul class="menu">
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="">Nos produits</a></li>
+                        <li><a href="" >Nos produits</a></li>
                         <li><a href="">Tracabilité</a></li>
-                        <li><a href="contact.html" class="lien-actif">Contact</a></li>
+                        <li><a href="" class="lien-actif" >Contact</a></li>
                     </ul>
-                </nav>  
+                </nav>
+
+                <nav class="burger-menu" hidden>
+                    <ul class="menu">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="" >Nos produits</a></li>
+                        <li><a href="">Tracabilité</a></li>
+                        <li><a href="" class="lien-actif">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="button-menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
                 <div class="profile">
-                   <button type="button" aria-label="Voir le panier">
-                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
-                    </button>
-                   <img src="img/divers/avatar-utilisateur.jpg" alt="profile picture">
+                   <button><i class="fa-solid fa-cart-shopping"></i></button>
+                   <img src="../img/divers/avatar-utilisateur.jpg" alt="profile picture" loading="lazy">
                 </div>
             </div>
         </div>
@@ -158,7 +165,7 @@
             <span aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
             <div><strong>Horaires d’accueil &amp; visites</strong>Lundi au samedi : 08h30–18h00<br />Fermé le dimanche et jours de fête religieuse.</div>
           </div>
-        </section>
+        </section>+
 
         <section class="map-card" aria-label="Localisation de l'atelier">
               <div class="map-visual">
@@ -344,5 +351,5 @@
 </footer>
 <!-- end footer -->
 </body>
-
+<script src="script.js"></script>
 </html>
