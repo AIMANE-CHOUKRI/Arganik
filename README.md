@@ -1,13 +1,33 @@
 # Arganik:
-
 Développement en équipe d'un site vitrine de 5 pages, responsive et accessible, en HTML5 et CSS3, pour Arganik, coopérative féminine d'huile d'argan et de produits du terroir du Souss.
-
 L'arganier pousse presque uniquement dans le sud-ouest du Maroc. Son fruit contient une noix très dure qui renferme les amandons, d'où l'on extrait l'huile. Les coopératrices récoltent les fruits tombés, les sèchent, cassent les noix à la main puis pressent les amandons. Les bénéfices sont partagés entre elles.
 
-# Équipe:
+## Équipe:
+- Aimane Choukri (Scrum Master) :
+    - Traçabilité 
 
-- **Aimane Choukri (Scrum Master)** : Traçabilité
-- **Aya Lamzoudi** : Header, Nos produits
-- **Hamza Hakkache** : Footer, Contact et commande
-- **Meriame Essiass** : Accueil
-- **Aymane Chokri** : Fiche produit
+- Aya Lamzoudi :
+    - Header 
+    - Nos produits 
+
+- Hamza Hakkache :
+    - Footer 
+    - Contacte & Commande 
+
+- Meriame Essiass :
+    - Accueil 
+
+- Aymane Chokri :
+    - Fiche produit 
+
+## Technologies:
+- HTML5 sémantique (`header`, `nav`, `main`, `section`, `article`, `aside`, `footer`)
+- CSS3 : Flexbox, CSS Grid, approche mobile-first
+- Tailwind CSS (sur certaines sections)
+- JavaScript (menu burger)
+- Git et GitHub (branches, Pull Requests)
+
+## Liens:
+- Site déployé (GitHub Pages) : https://aimane-choukri.github.io/Arganik/
+- Planification des tâches (Trello) : https://trello.com/b/HfYn6xgV
+- Présentation du projet (Canva) : https://canva.link/v74h5rbpv53tsps
