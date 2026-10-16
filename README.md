@@ -5,10 +5,10 @@ L'arganier pousse presque uniquement dans le sud-ouest du Maroc. Son fruit conti
 # Équipe:
 Aimane Choukri (Scrum Master) : - Traçabilité ;
 
-Aya Lamzoudi : - Header , - Accueil ;
+Aya Lamzoudi : - Header , - Nos produits ;
 
 Hamza Hakkache : - Footer , - Contacte & Commande ;
 
-Meriame Essiass : - Nos produits ;
+Meriame Essiass : - Accueil ;
 
 Aymane Chokri : - Fiche produit ;
