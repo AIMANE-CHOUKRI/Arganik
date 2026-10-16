@@ -1,113 +1,109 @@
 /* css of header  */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Inter', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-
-    background-color: #F7F8FA;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #F7F8FA;
 }
 
 /* header css */
 header .headercontainer {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(247, 243, 243);
-    overflow: hidden;
-    margin-top: -1.30vw;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(247, 243, 243);
+  overflow: hidden;
+  margin-top: -1.30vw;
 }
 
 .headercontainer .info {
-    margin-top: 10px;
-    color: white;
-    background-color: #173728;
-    font-size: 2vh;
-    text-align: center;
+  margin-top: 10px;
+  color: white;
+  background-color: #173728;
+  font-size: 2vh;
+  text-align: center;
 }
 
 .headercontainer .tete {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 10px;
 }
 
 .tete a {
-    padding-left: 25px;
+  padding-left: 25px;
 }
 
 .logo img {
-    width: 150px;
-    height: 60px;
+  width: 150px;
+  height: 60px;
 }
 
 .navbar ul {
-    display: flex;
-    background-color: white;
-    color: black;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2px 14px;
-    font-size: 2.3vh;
-    border-radius: 50px;
-
-
+  display: flex;
+  background-color: white;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 14px;
+  font-size: 2.3vh;
+  border-radius: 50px;
 }
 
 .navbar ul li {
-    padding: 5px;
-    text-align: center;
-
+  padding: 5px;
+  text-align: center;
 }
 
 .profile button {
-    position: relative;
-    right: 10px;
-    top: -8px;
-    width: 32px;
-    background: none;
-    border: none;
-    cursor: pointer;
+  position: relative;
+  right: 10px;
+  top: -8px;
+  width: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .profile {
-    padding-right: 25px;
+  padding-right: 25px;
 }
 
 .profile img {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
 }
 
 .menu .lien-actif {
-    padding: 5px;
-    background-color: #173728;
-    color: rgb(240, 232, 217 ) ;
-    border-radius: 7px;
+  padding: 5px;
+  background-color: #173728;
+  color: rgb(240, 232, 217 ) ;
+  border-radius: 7px;
 
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* css of footer  */
@@ -151,8 +147,8 @@ a {
 
 
 .footer-about img{
-    display:flex;
-    height: 40px; 
+  display:flex;
+  height: 40px; 
     
 } 
 .footer p,
@@ -299,12 +295,12 @@ a {
 /* Contenu Traçabilité */
 
 #titre {
-    padding-top: 2vw;
-    justify-items: center;
-    justify-content: center;
-    background-image: radial-gradient(#F9F2E6, #FFF8EF);
-    text-align: center;
-    padding-bottom: 7vw;
+  padding-top: 2vw;
+  justify-items: center;
+  justify-content: center;
+  background-image: radial-gradient(#F9F2E6, #FFF8EF);
+  text-align: center;
+  padding-bottom: 7vw;
 }
 
 /* Variables & typographie */
@@ -313,35 +309,35 @@ a {
   --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 h1,h2,h3,h4 {
-    font-family: var(--font-headline);
+  font-family: var(--font-headline);
 }
 p {
   font-family: var(--font-body);
 }
 
 #minicard {
-    display: grid;
-    color: #795700;
-    grid-template-columns: 1vw 15vw;
-    grid-template-rows: 1vw;
-    gap: 0.5vw;
-    margin: 0 auto;
-    font-weight: bold;
-    font-size: 10px;
-    width: max-content;
-    background-color: moccasin;
-    padding: 1%;
-    border-radius: 30px;
+  display: grid;
+  color: #795700;
+  grid-template-columns: 1vw 15vw;
+  grid-template-rows: 1vw;
+  gap: 0.5vw;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 10px;
+  width: max-content;
+  background-color: moccasin;
+  padding: 1%;
+  border-radius: 30px;
 }
 
 #card-verif {
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    background-color: #FFF8EF;
-    width: max-content;
-    border-radius: 15px;
-    box-shadow: 0px 7px 7px #ebdfca;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background-color: #FFF8EF;
+  width: max-content;
+  border-radius: 15px;
+  box-shadow: 0px 7px 7px #ebdfca;
 }
 #card-verif b {
   width: max-content;
