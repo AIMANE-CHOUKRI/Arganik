@@ -344,9 +344,9 @@ align-items: center;
     backface-visibility: visible;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     position:sticky;
     width: 100%;
+    padding-bottom: 32px;
     box-sizing: border-box;
     min-height: auto;
     height: 100%;
@@ -362,7 +362,7 @@ align-items: center;
 
 h1{
     color: rgb(247, 249, 250);
-    font-size: 25px;
+    font-size: 55px;
     font-family:'Times New Roman', Times, serif;
     margin: 0%;
     line-height: 1.1;
@@ -371,7 +371,7 @@ h1{
 
 
 .ic1{
-    width: 8px;
+    width: 15px;
     filter: invert(83%) sepia(19%) saturate(501%)
             hue-rotate(350deg) brightness(99%) contrast(91%);
     padding: 2;
@@ -390,24 +390,23 @@ h1{
 
 
 .pet{
-    font-size: 6px;
+    font-size: 12px;
     color:rgb(247, 217, 152) ;
      font-family: 'Helvetica Neue', Arial, sans-serif;
      font-weight: bold;
+     flex-wrap: nowrap;
 }
 
 
 .aborder{
-    height: 12px;
-    width: 161px;
-    border-left: 15px;
+    height: 20px;
+    width: 320px;
+    background-color:rgb(236, 201, 155,0.2);
     display: flex;
-    align-items: center;
     flex-wrap: nowrap;
     gap: 1px;
     border-style: none;
     border-radius: 10px;
-    background-color:rgb(236, 201, 155,0.2);
 }
 
 
@@ -424,12 +423,12 @@ h1{
 
 
 button{
-    height: 21px;
-    width: 101px;
+    height: 40px;
+    width: 200px;
     border-style: none;
     border-radius: 4px;
     background-color: rgb(32, 65, 43);
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 300;
     color: rgba(156, 179, 164, 0.8);
     font-family: 'Inter', sans-serif;
@@ -452,69 +451,201 @@ button{
 
 
 .flech{
-    width: 10px;
+    width: 15px;
     filter: brightness(0) invert(1);
 }
 .sameicone > div{
     display: flex;
     align-items: center;
     gap: 3px;
-    font-size: 6px;
+    font-size: 120px;
     color: #d7dec8;;
 }
 .text_hueiles{
   color: #d7dec8;
-  font-size: 8px;
+  font-size: 16px;
+  font-weight:300 ;
+
 }
 /* css de deuxième section  */
 #sec_deux{
+  padding-left: 22px ;
+  padding-right: 22px;
   background-color: #f7f0e2;
   display: flex;
   flex-direction: column;
-  gap: 64px; ;
+  gap: 80px; ;
 }
 #article1{
   display: flex;
   flex-direction: row;
   justify-content:space-around;
-  gap: 25px;
+  gap: 16px;
+  position: relative;
+  margin-top: -32px;
 }
 .cart{
-  padding-left: 12px;
+  padding: 16px;
+  height: 100%;
+  width: 100vh; ;
   background-color: #F7F8FA;
   border: none;
   border-radius: 10px;
   box-shadow:0 5px 5px #10213c20;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap:8px ;
+  gap:32px ;
 }
 img{
-  width: 16px;
-  filter: invert(35%) sepia(31%) saturate(600%)
-            hue-rotate(2deg) brightness(88%) contrast(88%); 
+  width: 32px; 
   
 }
 .box{
   background-color:#f7f0e1 ;
-  width:  26px ;
-  height:26px ;
+  width:  40px ;
+  height:40px ;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0 5px 5px #10213c20 ;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .num-gras{
+  color: #1f4201;
   font-weight:550;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 26px;
+  font-size: 32px;
 }
 .ptit_titre{
   font-weight:600;
-  font-size: small;
+  font-size: 18px;
 }
 .para{
-  font-size: 8px;
+  font-size: 12px;
+  color:rgba(53, 53, 52, 0.8);
+  font-weight: initial;
 }
+#ptit2{
+  font-size:4px ;
+  display: flex;
+  color: #c68b0c;
+  letter-spacing: normal ;
+  font-weight: bold;
+  letter-spacing: 0px;
+}
+h2{
+  color:#003a00;
+  font-family: 'Cormorant Garamond', serif; 
+  letter-spacing: px;
+  line-height: ;
+  letter-spacing: normal;
+  font-size: 40px;
+}
+#article2{
+  display: flex;
+  gap:10px;
+  justify-content:space-around;
+  width: 100%;
+  height: 100%;
+}
+.produit_img1{
+  background-image:url(img/produits/huile-argan-cosmetique-02.jpg) ;
+  background-position: center;
+  background-size: cover;
+  width: 50vh;
+  height: 50vh;
+}
+.produit_img2{
+  background-image: url(img/produits/amlou-amandes-miel-03.jpg);
+  background-size: cover;
+  background-position: center;
+  height:50vh ;
+  width: 50vh;
+}
+.produit_img3{
+  background-image: url(img/produits/huile-argan-culinaire-02.jpg);
+  background-size: cover;
+  background-position: center;
+  height:50vh;
+  width: 50vh;
+}
+.produit_img4{
+  background-image: url(img/produits/savon-vegetal-argan-cedre.jpg);
+  background-size: cover;
+  background-position: center;
+  height:50vh ;
+  width: 50vh;
+}
+.inf0{
+  font-size: 10px;
+  font-weight: 700;
+}
+.back_text{
+  background-color: #F7F8FA;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pri{
+  color:#5b5b5b ;
+  font-size:10px ;
+  font-weight: 700;
+  flex-wrap: nowrap;
+}
+.nom_produit{
+  color:#2e302d;
+  font-family: 'Cormorant Garamond', serif; 
+  line-height:1.5 ;
+  font-size: 20px;
+  font-weight: 700;
+}
+p{
+  font-weight: bold;
+  font-size:12px ;
+}
+
+.iticket{
+  border: none;
+  background-color: rgba(53, 53, 52, 0.4);
+  border-radius: 9px;
+  padding: 2px;;
+  display: inline-block;
+  
+}
+.cart{
+  padding: 16px;
+  height: 100%;
+  width: 100%; ;
+  background-color: #F7F8FA;
+  border: none;
+  border-radius: 10px;
+  box-shadow:0 5px 5px #10213c20;
+  display: flex;
+  flex-direction: column;
+  gap:8px ;
+}
+.ic2{
+    width: 20px;
+    filter: invert(60%) sepia(90%) saturate(1000%)
+            hue-rotate(1deg) brightness(99%) contrast(61%);
+    padding: 2;
+}
+.cart1{
+  padding: 16px;
+  width: 95vh;
+  background-color: #F7F8FA;
+  border: none;
+  border-radius: 10px;
+  box-shadow:0 5px 5px #10213c20;
+  display: flex;
+  flex-direction: column;
+  gap:2px ;
+}
+.foot-art{
+  display: flex;
+  gap: 74px;
+}
+
+
+
