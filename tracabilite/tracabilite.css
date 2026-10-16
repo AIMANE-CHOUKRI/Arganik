@@ -302,7 +302,7 @@ a {
     padding-top: 2vw;
     justify-items: center;
     justify-content: center;
-    background-image: radial-gradient(#F9F2E6, #fff6e8);
+    background-image: radial-gradient(#F9F2E6, #FFF8EF);
     text-align: center;
     padding-bottom: 7vw;
 }
@@ -355,7 +355,7 @@ p {
   text-align: left;
 }
 #cardInfo b {
-  font-size: 1.30vw;
+  /* font-size: 1.30vw; */
   font-family: Plus Jakarta Sans;
 }
 #card-verif p {
@@ -374,14 +374,6 @@ p {
 }
 .titleTraca p {
   color: rgb(64, 64, 64);
-}
-#spanExtra {
-  color: #6B6F67;
-  float: right;
-  padding: 0.3vw;
-  background-color: #F4EDE1;
-  border-radius: 10px;
-  margin: 1vw;
 }
 #cardInfo span b {
   color: #474a44;
@@ -410,9 +402,11 @@ p {
   border-radius: 10px;
   padding: 1vw;
   height: 4vw;
+
 } #buttonConsulter b {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
+  font-family: var(--font-body);
 } #buttonConsulter:hover {
   cursor: pointer;
   background-color: #fdce70;
@@ -420,6 +414,8 @@ p {
 
 #inputQr {
   grid-column: 1;
+  font-size: 1.2rem;
+  font-family: var(--font-body);
   height: 4vw;
   border: none;
   padding: 1vw;
@@ -445,18 +441,35 @@ p {
 }
 .verif-header h2 {
   font-weight: 100;
-  margin-left: -6vw;
+  margin-left: -4.5vw;
 }
 .verif-header p {
   margin-left: 0.5vw;
 }
 
 /* Colonnes d'infos */
+.title-columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} .title-columns b {
+  font-size: 1rem;
+}
+#spanExtra {
+  color: #6B6F67;
+  float: right;
+  padding: 0.5vw;
+  background-color: #F4EDE1;
+  border-radius: 10px;
+  margin: 1vw;
+}
 .info-columns {
   display: flex;
   flex-direction: row;
   width: min-content;
-  gap: 0.5%;
+  gap: 1%;
+} .info-columns b {
+  font-size: 1.15rem;
 }
 .info-col {
   width: max-content;
@@ -587,7 +600,7 @@ p {
   padding-top: 2vw;
   justify-items: center;
   justify-content: center;
-  background-image: radial-gradient(#F9F2E6, #f4e8d1);
+  background-image: radial-gradient(#fff4e4, #FFF8EF);
   text-align: center;
   padding-bottom: 7vw;
 }
@@ -670,7 +683,7 @@ p {
 /* ---____________ Partie Certification ____________--- */
 
 #sectionCertif {
-  background-image: linear-gradient(#FFF8EF, #f9e8d1);
+  background-image: linear-gradient(#FFF8EF, #faeddb);
   padding-bottom: 4vw;
 } #sectionCertif article {
   background-image: radial-gradient(#faf5ec, #f7efe2) ;
@@ -681,7 +694,7 @@ p {
   margin: 2vw;
   padding-top: 1.8vw;
   padding-bottom: 1vw;
-  box-shadow: rgb(225, 197, 148) 0px 10px 20px;
+  box-shadow: rgb(236, 214, 175) 0px 10px 20px;
 } 
 #sectionCertif p {
   font-size: 1.08vw;
@@ -727,7 +740,6 @@ p {
 .pContenu {
   color: #424842;
 }
-
 .spanCertif p {
   color: #7C5700;
   padding: 1vw;
