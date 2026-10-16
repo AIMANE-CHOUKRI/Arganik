@@ -4,13 +4,12 @@ body {
 }
 
 .maincontainer {
-    background-color: #f9f2e6;
+    background-color: #fff8ef;
 }
 
 .firstsection {
-    background-color: #f9f2e6;
+    background-color: #fff8ef;
     margin-bottom: 30px;
-    /* margin-top: 200px; */
 }
 
 .firstsection .introduction {

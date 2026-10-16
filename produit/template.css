@@ -146,6 +146,7 @@ a {
     font-size: 2rem;
     cursor: pointer;
     color: #222;
+
 }
 
 .burger-menu .menu {
@@ -167,7 +168,7 @@ a {
 
 .burger-menu .menu a:hover,
 .burger-menu .menu a.lien-actif {
-    color: #ff6b2c;
+    color: white;
 }
 
 .button-menu {
