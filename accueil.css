@@ -356,7 +356,8 @@ align-items: center;
  .diffcolor{
     color: rgb(248, 222, 163);
     font-style: italic;
-    font-weight: 555;
+    font-weight: 555px;
+    font-size: 55px;
 }
 
 
@@ -553,39 +554,59 @@ h2{
   background-image:url(img/produits/huile-argan-cosmetique-02.jpg) ;
   background-position: center;
   background-size: cover;
-  width: 50vh;
+  width: 98%;
   height: 50vh;
+  margin: 0 auto;
+  border-radius: 10px 10px 10px 10px;
 }
 .produit_img2{
   background-image: url(img/produits/amlou-amandes-miel-03.jpg);
   background-size: cover;
   background-position: center;
-  height:50vh ;
-  width: 50vh;
+  width: 98%;
+    height: 50vh;
+    margin: 0 auto;
+     border-radius: 10px 10px 10px 10px;
 }
 .produit_img3{
   background-image: url(img/produits/huile-argan-culinaire-02.jpg);
   background-size: cover;
   background-position: center;
-  height:50vh;
-  width: 50vh;
+  width: 98%;
+    height: 50vh;
+    margin: 0 auto;
+     border-radius: 10px 10px 10px 10px;
 }
 .produit_img4{
   background-image: url(img/produits/savon-vegetal-argan-cedre.jpg);
   background-size: cover;
   background-position: center;
-  height:50vh ;
-  width: 50vh;
+ width: 98%;
+    height: 50vh;
+    margin: 0 auto;
+     border-radius: 10px 10px 10px 10px;
 }
-.inf0{
+.sous-titre P{
   font-size: 10px;
   font-weight: 700;
+  color: #656563;
+}
+span{
+  font-size: 10px;
+  font-weight: 700;
+  color: #000000;
 }
 .back_text{
-  background-color: #F7F8FA;
+  padding-left: 12px;
+  background-color: #f7f8fa;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border-radius: 0px 0px 10px 10px;
+  height: 200px;
+  margin-left: -16px ;
+  margin-right:-16px ;
+  margin-bottom: -16px;
 }
 .pri{
   color:#5b5b5b ;
@@ -613,18 +634,7 @@ p{
   display: inline-block;
   
 }
-.cart{
-  padding: 16px;
-  height: 100%;
-  width: 100%; ;
-  background-color: #F7F8FA;
-  border: none;
-  border-radius: 10px;
-  box-shadow:0 5px 5px #10213c20;
-  display: flex;
-  flex-direction: column;
-  gap:8px ;
-}
+
 .ic2{
     width: 20px;
     filter: invert(60%) sepia(90%) saturate(1000%)
@@ -632,20 +642,175 @@ p{
     padding: 2;
 }
 .cart1{
-  padding: 16px;
-  width: 95vh;
-  background-color: #F7F8FA;
+  padding: 15px;
+  width: 60vh;
+  background-color: #cfcfd1;
   border: none;
   border-radius: 10px;
-  box-shadow:0 5px 5px #10213c20;
+  /* box-shadow:0 5px 5px #10213c20; */
   display: flex;
   flex-direction: column;
-  gap:2px ;
+  gap:15px ;
 }
 .foot-art{
   display: flex;
   gap: 74px;
 }
+.sous-titre{
+  display: flex;
+  gap: 78px;
+}
+.sous-titre img{
+  width: 15px; ;
+}
+.grand_img{
+  width: 600px;
+  height: 500px;
+  border: none;
+  border-radius: 15px;
+}
+
+#article3{
+  display: flex;
+  flex-direction: row;
+  gap:16px;
+  padding: 12px;
+}
+#paragraphe{
+  display: flex;
+  flex-direction: column;
+  gap:25px;
+}
+.petit_para  img{
+  width: 15px;
+}
+
+.petit_para {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+h3{
+  color: #003a00;
+  font-size: 35px;
+  font-family: 'Playfair Display',Georgia,serif;
+}
+#p{
+  padding-left: 5px;
+  background-color: rgba(83, 83, 81, 0.2);
+  border:none;
+  border-radius:12px ;
+  color:#003a00;
+  font-weight: 700;
+  width: 230px;
+}
+#p img{
+  width: 12px;
+}
+.long_pra{
+  color: rgb(99, 101, 99);
+  font-weight: 100;
+  font-size:15px ;
+}
+.list_inf img{
+  width: 16px;
+}
+.list_inf{
+  color: #002700;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.list_inf > div{
+  display: flex;
+  gap:2px;
+}
+.image_colore{
+  background-color:linear-gradient(to top, rgba(22, 51, 32, 0.9), rgba(14, 15, 14, 0.5)) ;
+}
+.petit_para{
+  color: #002700;
+}
+.box1{
+  display:flex;
+  gap: 200px;
+}
+.image1{
+  border: none;
+  width: 30px;
+  margin-top: 5px;
+}
+.image2{
+  border: none;
+  width: 30px;
+  margin-top: 5px;
+}
+.image3{
+  border: none;
+  width: 30px;
+  margin-top: 5px;
+}
+
+.box1_img1 {
+  background-color: #d9f7d9;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+.box1_img2{
+  background-color: rgb(246, 216, 162);
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.box1_img3{
+  background-color: rgb(250, 231, 226);
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.box1  p{
+  font-family: 'Playfair Display',Georgia,serif;
+  font-size: 35px;
+  color: #f5d899;
+}
+.nom_produit1{
+  color:#2e302d;
+  font-family: 'Cormorant Garamond', serif; 
+  line-height:1.5 ;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sous_para1{
+  font-size: 12px;
+    color:rgb(4, 66, 24) ;
+     font-family: 'Helvetica Neue', Arial, sans-serif;
+     font-weight: bold;
+     flex-wrap: nowrap;
+}
+.sous_para2{
+  font-size: 12px;
+    color:rgb(128, 82, 42) ;
+     font-family: 'Helvetica Neue', Arial, sans-serif;
+     font-weight: bold;
+     flex-wrap: nowrap;
+}
+.sous_para3{
+  font-size: 12px;
+    color:rgb(97, 44, 1) ;
+     font-family: 'Helvetica Neue', Arial, sans-serif;
+     font-weight: bold;
+     flex-wrap: nowrap;
+}
+.ic2{
+  width: 15px;
+    filter: invert(23%) sepia(10%) saturate(501%)
+            hue-rotate(3deg) brightness(9%) contrast(95%);
+    padding: 2;
+}
+.sous_para1{
+  display: flex;
+  align-items: center;
+}
+
+
 
 
 
