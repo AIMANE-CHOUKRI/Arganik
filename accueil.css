@@ -1079,4 +1079,132 @@ h3{
 
 
 
+img { max-width: 100%; }
+
+
+#flacon .title { grid-area: title; }
+#flacon .text  { grid-area: text; }
+
+
+@media (min-width: 1600px) {
+  #sec_deux,
+  .sec3 {
+    padding-left: calc((100% - 1400px) / 2);
+    padding-right: calc((100% - 1400px) / 2);
+  }
+}
+
+
+@media (max-width: 1200px) {
+  h1,
+  .diffcolor { font-size: clamp(34px, 5vw, 55px); }
+
+  .sec3 { padding-left: 22px; padding-right: 22px; }
+
+
+  #article1,
+  #article2 { gap: 16px; }
+
+  .cart,
+  .cart2,
+  .cart3 {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    height: auto;
+  }
+
+  .cart1 {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+  }
+
+  .back_text { flex: 1; height: auto; padding-bottom: 16px; }
+  .sous-titre { gap: 12px; justify-content: space-between; }
+  .foot-art  { gap: 16px; justify-content: space-between; align-items: center; margin-top: auto; }
+  .box1 { gap: 16px; justify-content: space-between; }
+
+  
+  #article3 { gap: 24px; align-items: flex-start; }
+  .image_colorer { width: 50%; height: auto; }
+  .grand_img { width: 100%; height: auto; aspect-ratio: 6 / 5; }
+  #paragraphe { flex: 1; min-width: 0; gap: 20px; }
+  .list_inf img { flex-shrink: 0; }
+}
+
+
+@media (max-width: 992px) {
+
+  #article1,
+  #article2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+ 
+  #article1 > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+  .cart,
+  .cart1,
+  .cart2,
+  .cart3 { width: auto; }
+
+  .produit_img1,
+  .produit_img2,
+  .produit_img3,
+  .produit_img4 { height: 260px; }
+
+ 
+  #article3 { flex-direction: column; align-items: stretch; }
+  .image_colorer { width: 100%; }
+  .grand_img { aspect-ratio: 16 / 11; }
+  #p { width: fit-content; padding-right: 10px; }
+ 
+
+  #disp_right { padding-right: 20px; }
+  .sameicone { flex-wrap: wrap; }
+
+
+  #flacon { padding: 20px 32px; }
+
+
+  .text_hueiles br,
+  .para br,
+  .long_pra br,
+  .list_inf br,
+  .cart3 br,
+  h2 br,
+  h3 br { display: none; }
+}
+
+
+@media (max-width: 768px) {
+  #sec_deux { gap: 56px; padding-left: 16px; padding-right: 16px; }
+  .sec3 { gap: 56px; padding: 56px 16px; }
+
+  h2 { font-size: 32px; }
+  h3 { font-size: 30px; }
+
+  
+  .aborder {
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+    padding: 3px 10px;
+  }
+  .button { flex-direction: column; align-items: flex-start; }
+  .button button { width: 100%; max-width: 320px; }
+
+ 
+  #flacon {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon title"
+
+
+
+
+
+
 
