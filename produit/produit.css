@@ -1,0 +1,723 @@
+/* start first section */
+body {
+    margin: 10px 15px;
+}
+
+.maincontainer {
+    background-color: #fff8ef;
+}
+
+.firstsection {
+    background-color: #fff8ef;
+    margin-bottom: 30px;
+}
+
+.firstsection .introduction {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 40px;
+    flex-wrap: wrap;
+}
+
+.firstsection .introduction .intro {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    padding: 10px;
+    width: 600px;
+
+}
+
+.firstsection .introduction .home {
+    display: flex;
+    font-size: 14px;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    max-width: 200px;
+}
+
+.firstsection .introduction span {
+    text-align: center;
+    background-color: #fcdaa4;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #173728;
+    padding: 3px;
+    max-width: 250px;
+
+}
+
+.firstsection .introduction h1 {
+    color: #183324;
+}
+
+.firstsection .introduction p {
+    color: #6c6f68;
+    width: 550px;
+    font-size: 1em;
+    width: 100%;
+
+}
+
+.garantie {
+    display: flex;
+    background: rgb(228 220 220 / 49%);
+    max-width: 300px;
+    max-height: 49px;
+    border-radius: 9px;
+    align-self: end;
+    align-items: center;
+    flex-shrink: 1;
+    padding: 10px;
+
+}
+
+.garantie div {
+    padding-left: 10px;
+}
+
+.garantie div h6 {
+    color: #8b6a1d;
+
+}
+
+.home i.fa-solid.fa-house {
+    font-size: 15px;
+    padding-right: 5px;
+
+
+}
+
+.garantie i.fa-solid.fa-spa {
+    background: #2f493a;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    top: 3px;
+    padding: 7px;
+    color: beige;
+}
+
+
+.categorie {
+    padding: 5px 15px;
+    background-color: #ede6db;
+    width: 100%;
+    align-items: end;
+}
+
+.categorie ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 27px;
+}
+
+.categorie ul li {
+    background-color: #e1e1e1;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 13px;
+    flex-shrink: 1;
+}
+
+.categorie ul li a span {
+    background-color: #b0b0b0;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.categorie ul .lien-actif a span {
+    background-color: #3a3a3a;
+}
+
+.categorie ul .lien-actif {
+    background-color: #252525;
+    color: white;
+}
+
+/* end first section */
+
+/* start second section */
+
+.secondsection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 45px;
+    width: 100%;
+}
+
+aside {
+    background-color: #f4ebd7;
+    /* margin-left: 20px; */
+    width: 25%;
+    min-width: 150px;
+    min-height: 440px;
+    max-height: 650px;
+    border-radius: 15px;
+    flex-shrink: 1;
+}
+
+.sidecontainer>h4 {
+    padding: 10px;
+    background: #ede6db;
+    border-radius: 15px 15px 0 0;
+}
+
+.productinfo {
+    padding: 30px 15px;
+}
+
+.productinfo ul li {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.productinfo h5 i,
+.prodectformat h5 i {
+    color: #7f5b06;
+}
+
+
+input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+label input:checked {
+    accent-color: #173728;
+}
+
+.productinfo ul li span {
+    padding-left: 5px;
+}
+
+.prodectformat ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px;
+    font-size: 12px;
+}
+
+#last {
+    width: 200px;
+}
+
+.prodectformat ul li {
+    background: #f4ede1;
+    border-radius: 10px;
+    height: 30px;
+    padding: 4px 10px;
+    width: 133px;
+    flex-shrink: 1;
+}
+
+.prodectformat h5 {
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+/* les article */
+
+.product {
+    flex-shrink: 1;
+    width: 70%;
+}
+
+.product .articlecontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 190px));
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+article {
+    background-color: #e7e7e7;
+    width: 190px;
+    border-radius: 10px;
+}
+
+article .container .pic {
+    padding-left: 15px;
+    background: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.pic h6 {
+    background: #d2d2d2;
+    text-align: center;
+    border-radius: 8px;
+    width: 150px;
+    position: relative;
+    top: 15px;
+}
+
+#article8 h6 {
+    font-size: 10px;
+}
+
+article img {
+    width: 160px;
+    height: 130px;
+    border-radius: 10px;
+}
+
+.info .rate {
+    font-size: 12px;
+}
+
+article .info {
+    padding: 18px;
+
+}
+
+.info h4 {
+    color: rgb(36, 30, 30);
+}
+
+.info .introd {
+    font-size: 12px;
+    padding-bottom: 10px;
+    ;
+}
+
+.info .quantity {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #e1e1e1;
+    color: #4a4a4a;
+    border-radius: 7px;
+    padding: 2px 10px;
+    font-size: 13px;
+    margin: 15px 0px;
+    font-weight: 600;
+    gap: 20px;
+}
+
+.info .prix {
+    display: grid;
+    font-size: 12px;
+    grid-template-columns: 20px 1fr;
+    gap: 63px;
+}
+
+.info .prix .eye {
+    background-color: #141917;
+    color: white;
+    height: 30px;
+    text-align: center;
+    width: 82px;
+    padding-top: 5px;
+    border-radius: 6px;
+}
+
+.eye i.fa-regular.fa-eye {
+    padding-right: 5px;
+}
+
+.prix p span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.articlefooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+}
+
+.articlefooter p {
+    font-size: 12px;
+    flex-shrink: 1;
+    padding-bottom: 10px;
+
+}
+
+.articlefooter .nextpage {
+    display: flex;
+    flex-shrink: 1;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-right: 90px;
+
+
+}
+
+.articlefooter .nextpage div {
+    background-color: rgb(230 221 221);
+    border-radius: 6px;
+    padding: 6px 10px;
+
+}
+
+.articlefooter .nextpage #pagenumber {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.articlefooter div .lien-actif {
+    background-color: #183324;
+    color: white;
+}
+
+/* end second section */
+
+/* start third section */
+
+.thirdsection {
+    width: 100%;
+    background-color: #2f493a;
+}
+
+.thirdconainer {
+    display: flex;
+    width: 96%;
+    background-color: #2f493a;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.first,
+.second {
+    display: flex;
+    gap: 10px;
+    width: 49%;
+    padding: 10px 40px;
+    flex-shrink: 1;
+    min-width: 250px;
+
+}
+
+
+.first .icon,
+.second .icon {
+    font-size: 20px;
+    background: #183324;
+    color: #6f5203;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.first h4,
+.second h4 {
+    color: #dbded9;
+}
+
+.first p,
+.second p {
+    font-size: 12px;
+    color: #708c7a;
+
+}
+
+.ligne {
+    width: 0.1%;
+    height: 34px;
+    background: #183324;
+    align-self: center;
+}
+
+/* end third section */
+
+
+
+
+/* css of the media */
+
+/* Pour les tablettes */
+
+
+@media (max-width: 768px) {
+
+    /* header css */
+    body {
+        margin: 0;
+    }
+
+    header .headercontainer {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .headercontainer .tete {
+        height: auto;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 110px;
+        height: auto;
+    }
+
+    .headercontainer .info {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .navbar,
+    .profile {
+        display: none;
+    }
+
+    .button-menu {
+        display: block;
+    }
+
+
+    /* footer css */
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .certifications {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+        padding: 15px;
+    }
+
+    .certifications div {
+        white-space: normal;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+    }
+
+    .legal-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* end footer */
+
+    /* sections media  */
+    aside {
+        width: 46%;
+        margin: auto;
+    }
+
+    .firstsection .introduction p {
+
+        font-size: 12px;
+        width: 100%;
+    }
+
+    /* les article */
+    .product {
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .articlefooter {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .articlefooter p {
+        font-size: 12px;
+        padding: 0 18px 14px;
+    }
+
+    .articlefooter .nextpage {
+        margin: 0;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .articlefooter .nextpage #pagenumber {
+        width: 40px;
+        height: 30px;
+        text-align: center;
+    }
+
+    .first h4,
+    .second h4 {
+        font-size: 13px;
+    }
+
+    .first p,
+    .second p {
+        font-size: 10px;
+    }
+
+    .first .icon,
+    .second .icon {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .headercontainer .tete {
+        margin: 8px;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .button-menu {
+        font-size: 1.5rem;
+    }
+
+    /* sections media  */
+    .firstsection .introduction {
+        padding: 20px 26px;
+    }
+
+    .firstsection .introduction p {
+
+        font-size: 9px;
+        width: 100%;
+    }
+
+    .firstsection .introduction h1 {
+        font-size: 22px;
+    }
+
+    .firstsection .introduction span {
+        font-size: 10px;
+    }
+
+    .garantie div h6 {
+        font-size: 10px;
+    }
+
+    .categorie {
+        padding: 5px 20px;
+    }
+
+    .categorie ul .lien-actif {
+        width: 150px;
+    }
+
+    .categorie ul li {
+        font-size: 10px;
+    }
+
+    aside {
+        width: 65%;
+        margin-left: 8%;
+
+    }
+
+    /* les article */
+    .product {
+        margin-left: 45px;
+    }
+
+    .articlefooter {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .articlefooter p {
+        font-size: 10px;
+        padding: 0 18px 14px;
+    }
+
+    .articlefooter .nextpage {
+        margin: 0;
+    }
+
+    .articlefooter .nextpagemedia {
+        display: flex;
+        flex-shrink: 1;
+        gap: 7px;
+        margin-right: 0;
+        visibility: visible;
+        font-weight: bolder;
+        position: static;
+        width: 100%;
+    }
+
+    .articlefooter .nextpagemedia div {
+        background-color: rgb(230 221 221);
+        border-radius: 6px;
+        padding: 6px 10px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+
+    }
+
+    .articlefooter .nextpagemedia #pagenumber {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+    }
+
+    .articlefooter div .lien-actif {
+        background-color: #183324;
+        color: white;
+    }
+
+    .nextpage {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .first,
+    .second {
+        max-width: 100%;
+
+    }
+
+    .first h4,
+    .second h4 {
+        font-size: 12px;
+    }
+
+    .first h4,
+    .second h4 {
+        font-size: 12px;
+    }
+
+    .first .icon,
+    .second .icon {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .ligne {
+        display: none;
+    }
+
+
+}
+
+
+.nextpagemedia {
+    visibility: hidden;
+    position: absolute;
+}
