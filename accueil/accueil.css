@@ -339,7 +339,7 @@ align-items: center;
 
 .back_img{
     background-image: linear-gradient(to right, rgba(22, 51, 32, 0.9), rgba(14, 15, 14, 0.5)) ,
-    url("img/hero/accueil-hero-cooperatrices.jpg"); 
+    url(../img/hero/accueil-hero-cooperatrices.jpg); 
     background-repeat: no-repeat;
     backface-visibility: visible;
     background-position: center;
@@ -468,11 +468,11 @@ button{
   font-weight:300 ;
 
 }
-/* css de deuxième section  */
+
 #sec_deux{
   padding-left: 22px ;
   padding-right: 22px;
-  background-color: #f7f0e2;
+  background-color: #faf2e7;
   display: flex;
   flex-direction: column;
   gap: 80px; ;
@@ -487,7 +487,7 @@ button{
 }
 .cart{
   padding: 16px;
-  height: 100%;
+  height: 220px;
   width: 100vh; ;
   background-color: #F7F8FA;
   border: none;
@@ -523,8 +523,8 @@ img{
   font-size: 18px;
 }
 .para{
-  font-size: 12px;
-  color:rgba(53, 53, 52, 0.8);
+  font-size: 14px;
+  color:rgba(15, 33, 11, 0.8);
   font-weight: initial;
 }
 #ptit2{
@@ -538,8 +538,6 @@ img{
 h2{
   color:#003a00;
   font-family: 'Cormorant Garamond', serif; 
-  letter-spacing: px;
-  line-height: ;
   letter-spacing: normal;
   font-size: 40px;
 }
@@ -551,7 +549,7 @@ h2{
   height: 100%;
 }
 .produit_img1{
-  background-image:url(img/produits/huile-argan-cosmetique-02.jpg) ;
+  background-image:url(../img/produits/huile-argan-cosmetique-02.jpg);
   background-position: center;
   background-size: cover;
   width: 98%;
@@ -560,7 +558,7 @@ h2{
   border-radius: 10px 10px 10px 10px;
 }
 .produit_img2{
-  background-image: url(img/produits/amlou-amandes-miel-03.jpg);
+  background-image: url(../img/produits/amlou-amandes-miel-03.jpg);
   background-size: cover;
   background-position: center;
   width: 98%;
@@ -569,7 +567,7 @@ h2{
      border-radius: 10px 10px 10px 10px;
 }
 .produit_img3{
-  background-image: url(img/produits/huile-argan-culinaire-02.jpg);
+  background-image: url(../img/produits/huile-argan-culinaire-02.jpg);
   background-size: cover;
   background-position: center;
   width: 98%;
@@ -578,7 +576,7 @@ h2{
      border-radius: 10px 10px 10px 10px;
 }
 .produit_img4{
-  background-image: url(img/produits/savon-vegetal-argan-cedre.jpg);
+  background-image: url(../img/produits/savon-vegetal-argan-cedre.jpg);
   background-size: cover;
   background-position: center;
  width: 98%;
@@ -663,11 +661,77 @@ p{
 .sous-titre img{
   width: 15px; ;
 }
+.image_colorer{
+  position: relative;
+  width: 600px;
+  height: 500px;
+  flex-shrink: 0;
+}
 .grand_img{
   width: 600px;
   height: 500px;
   border: none;
+  object-fit: cover;
   border-radius: 15px;
+  display: block;
+}
+.portrait__card{
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  width: 363px;
+  max-width: calc(100% - 48px);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "icon text"
+    "quote quote";
+  column-gap: 14px;
+  row-gap: 8px;
+  align-items: center;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.88);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+.portrait__icon{
+  grid-area: icon;
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #dcdcdc;
+  object-fit: contain;
+}
+.portrait__text{
+  grid-area: text;
+}
+.portrait__name{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1a1a1a;
+}
+.portrait__role{
+  margin: 2px 0 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+.portrait__quote{
+  grid-area: quote;
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.45;
+  color: #5c5c5c;
 }
 
 #article3{
@@ -737,39 +801,39 @@ h3{
 }
 .image1{
   border: none;
-  width: 30px;
+  width: 20px;
   margin-top: 5px;
 }
 .image2{
   border: none;
-  width: 30px;
+  width: 20px;
   margin-top: 5px;
 }
 .image3{
   border: none;
-  width: 30px;
+  width: 20px;
   margin-top: 5px;
 }
 
 .box1_img1 {
   background-color: #d9f7d9;
-  padding: 5px 10px;
+  padding: 5px 16px 12px 14px;;
   border-radius: 50%;
 }
 .box1_img2{
   background-color: rgb(246, 216, 162);
-  padding: 5px 10px;
+  padding: 5px 16px 12px 14px;
   border-radius: 50px;
 }
 .box1_img3{
   background-color: rgb(250, 231, 226);
-  padding: 5px 10px;
+  padding: 5px 16px 12px 14px;;
   border-radius: 50px;
 }
 .box1  p{
   font-family: 'Playfair Display',Georgia,serif;
   font-size: 35px;
-  color: #f5d899;
+  color: #e7dfcf;
 }
 .nom_produit1{
   color:#2e302d;
@@ -808,9 +872,334 @@ h3{
 .sous_para1{
   display: flex;
   align-items: center;
+  gap:1px;
+}
+.diff_background{
+  background-color:rgb(237, 227, 207) ;
+}
+.article4{
+  text-align: center;
+}
+.article4 :first-child{
+  color: #7e5702;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+.line{
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #efbe69;
+}
+.cont_étap{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.cart2{
+  height: 350px;
+   padding: 16px;
+  width: 70vh; 
+  background-color: #F7F8FA;
+  border: none;
+  border-radius: 10px;
+  box-shadow:0 5px 5px #10213c20;
+  display: flex;
+  flex-direction: column;
+  gap:32px ;
+}
+.space_between{
+  display: flex;
+  flex-direction: column;
+  gap:8px
+}
+.ptit_etoile{
+  width: 16px;
+   filter: brightness(0) saturate(100%)
+            invert(25%) sepia(30%)
+            saturate(1000%) hue-rotate(345deg);
+}
+.cart3{
+  padding: 30px;
+  height: 300px;
+  width: 100vh; ;
+  background-color: #F7F8FA;
+  border: none;
+  border-radius: 10px;
+  box-shadow:0 5px 5px #10213c20;
+  display: flex;
+  flex-direction: column;
+  gap:20px ;
+}
+.same_line{
+  padding-bottom: 17px;
+}
+.sous-line{
+ display: grid;
+    grid-template-columns: 42px minmax(0,1fr);
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 2px;
+    align-items: center;
+}
+.elm11 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+  background-color: #f2d5a9;
+  
+}
+.elm12 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+  background-color: #c0dfc3;
+  
+}
+.elm13 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f7b8b8;
+  
+}
+
+.elm2 {
+  font-size: 16px;
+  color: #014e01;
+  grid-column: 1px;
+  grid-row: 1px;
+  margin: 0;
+  text-align: left;
+}
+
+.elm3 {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0px;
+  padding: 0;
+  text-align: left;
+}
+.elm1 p{
+  padding: 0;
+  margin: 0;
+}
+.disp_line{
+  display: flex;
+  flex-direction: column;
+  gap:18px
+}
+#flacon{
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "icon title action"
+    "icon text  action";
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 2px;
+  margin: 32px auto;
+  padding: 20px 80px;
+  padding-left: 2Opx;
+  background: #f1ece1;
+  border-radius: 14px;
+  font-family: "Plus Jakarta Sans", "Poppins", sans-serif;
+}
+.title{
+  flex-wrap: nowrap;
+  font-size: 15px;
+  color: #003a00;
+}
+.text{
+  color: #003a00;
+  font-weight: 200;
+}
+#flacon > img {
+  grid-area: icon;
+  width: 46px;
+  height: 46px;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: #1f3b2d;
+  object-fit: contain;
+}
+#flacon button {
+  padding: 0;
+  border: none;
+  background-color: #fffffd ;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+#flacon > div {
+  grid-area: action;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.sec3{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-top: 100PX;
+  padding-bottom: 100px;
+  background-color: #fae9de;
 }
 
 
 
 
 
+
+img { max-width: 100%; }
+
+
+#flacon .title { grid-area: title; }
+#flacon .text  { grid-area: text; }
+
+
+@media (min-width: 1600px) {
+  #sec_deux,
+  .sec3 {
+    padding-left: calc((100% - 1400px) / 2);
+    padding-right: calc((100% - 1400px) / 2);
+  }
+}
+
+
+@media (max-width: 1200px) {
+  h1,
+  .diffcolor { font-size: clamp(34px, 5vw, 55px); }
+
+  .sec3 { padding-left: 22px; padding-right: 22px; }
+
+
+  #article1,
+  #article2 { gap: 16px; }
+
+  .cart,
+  .cart2,
+  .cart3 {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    height: auto;
+  }
+
+  .cart1 {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+  }
+
+  .back_text { flex: 1; height: auto; padding-bottom: 16px; }
+  .sous-titre { gap: 12px; justify-content: space-between; }
+  .foot-art  { gap: 16px; justify-content: space-between; align-items: center; margin-top: auto; }
+  .box1 { gap: 16px; justify-content: space-between; }
+
+  
+  #article3 { gap: 24px; align-items: flex-start; }
+  .image_colorer { width: 50%; height: auto; }
+  .grand_img { width: 100%; height: auto; aspect-ratio: 6 / 5; }
+  #paragraphe { flex: 1; min-width: 0; gap: 20px; }
+  .list_inf img { flex-shrink: 0; }
+}
+
+
+@media (max-width: 992px) {
+
+  #article1,
+  #article2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+ 
+  #article1 > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+  .cart,
+  .cart1,
+  .cart2,
+  .cart3 { width: auto; }
+
+  .produit_img1,
+  .produit_img2,
+  .produit_img3,
+  .produit_img4 { height: 260px; }
+
+ 
+  #article3 { flex-direction: column; align-items: stretch; }
+  .image_colorer { width: 100%; }
+  .grand_img { aspect-ratio: 16 / 11; }
+  #p { width: fit-content; padding-right: 10px; }
+ 
+
+  #disp_right { padding-right: 20px; }
+  .sameicone { flex-wrap: wrap; }
+
+
+  #flacon { padding: 20px 32px; }
+
+
+  .text_hueiles br,
+  .para br,
+  .long_pra br,
+  .list_inf br,
+  .cart3 br,
+  h2 br,
+  h3 br { display: none; }
+}
+
+
+@media (max-width: 768px) {
+  #sec_deux { gap: 56px; padding-left: 16px; padding-right: 16px; }
+  .sec3 { gap: 56px; padding: 56px 16px; }
+
+  h2 { font-size: 32px; }
+  h3 { font-size: 30px; }
+
+  
+  .aborder {
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+    padding: 3px 10px;
+  }
+  .button { flex-direction: column; align-items: flex-start; }
+  .button button { width: 100%; max-width: 320px; }
+
+ 
+  #flacon {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon title"
+  }
+}
