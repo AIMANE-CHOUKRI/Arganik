@@ -339,7 +339,7 @@ align-items: center;
 
 .back_img{
     background-image: linear-gradient(to right, rgba(22, 51, 32, 0.9), rgba(14, 15, 14, 0.5)) ,
-    url("img/hero/accueil-hero-cooperatrices.jpg"); 
+    url("/Arganik/img/hero/accueil-hero-cooperatrices.jpg"); 
     background-repeat: no-repeat;
     backface-visibility: visible;
     background-position: center;
@@ -549,7 +549,7 @@ h2{
   height: 100%;
 }
 .produit_img1{
-  background-image:url(img/produits/huile-argan-cosmetique-02.jpg) ;
+  background-image:url(/Arganik/img/produits/huile-argan-cosmetique-02.jpg);
   background-position: center;
   background-size: cover;
   width: 98%;
@@ -558,7 +558,7 @@ h2{
   border-radius: 10px 10px 10px 10px;
 }
 .produit_img2{
-  background-image: url(img/produits/amlou-amandes-miel-03.jpg);
+  background-image: url(/Arganik/img/produits/amlou-amandes-miel-03.jpg);
   background-size: cover;
   background-position: center;
   width: 98%;
@@ -567,7 +567,7 @@ h2{
      border-radius: 10px 10px 10px 10px;
 }
 .produit_img3{
-  background-image: url(img/produits/huile-argan-culinaire-02.jpg);
+  background-image: url(/Arganik/img/produits/huile-argan-culinaire-02.jpg);
   background-size: cover;
   background-position: center;
   width: 98%;
@@ -576,7 +576,7 @@ h2{
      border-radius: 10px 10px 10px 10px;
 }
 .produit_img4{
-  background-image: url(img/produits/savon-vegetal-argan-cedre.jpg);
+  background-image: url("/Arganik/img/produits/savon-vegetal-argan-cedre.jpg");
   background-size: cover;
   background-position: center;
  width: 98%;
