@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traçabilité — Du fruit au flacon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/logo/favicon.svg">
+    <link rel="stylesheet" href="tracabilite.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ___________________________________________ Header ______________________________________________ -->
+    <header>
+        <div class="headercontainer">
+            <div class="info">
+              <p>Livraison offerte au Maroc dès 300 MAD • Coopérative 100% solidaire et biologique certifée</p>
+            </div>
+            <div class="tete">
+                <a href="#accueil" class="logo"><img src="../img/logo/arganik-logo.svg" alt="logo"></a>
+
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../produit/produit.html">Nos produits</a></li>
+                        <li><a href="tracabilite.html" class="lien-actif">Tracabilité</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="burger-menu" hidden>
+                    <ul class="menu">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../produit/produit.html">Nos produits</a></li>
+                        <li><a href="tracabilite.html" class="lien-actif">Tracabilité</a></li>
+                        <li><a href="../contact/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="button-menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+                <div class="profile">
+                   <button><i class="fa-solid fa-cart-shopping"></i></button>
+                   <img src="../img/divers/avatar-utilisateur.jpg" alt="profile picture">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- _____________________________________________ Header _________________________________________________ -->
+    <!-- ___________________________________________ Traçabilité ______________________________________________ -->
+    <section id="titre">
+        <div class="titleTraca">
+            <span id="minicard"><img src="../icons/bouclier.svg" alt=""><p> HONNÊTETÉ BOTANIQUE & RIGUEUR</p></span>
+            <h1><strong>Traçabilité : Du Fruit au Flacon</strong></h1>
+            <p>Une transparence totale de l'arbre jusqu'à votre peau. Chaque goutte d'huile<br>Arganik porte l'histoire d'un terroir préservé et le savoir-faire méticuleux de nos<br>coopératrices.</p>
+        </div>
+        
+        <div id="card-verif">
+            <div>
+                <span class="verif-header">
+                    <img src="../icons/analytics.png" alt="" id="imgGlass">
+                    <span>
+                        <h2>Vérifier l'authenticité d'un lot</h2>
+                        <p>Accédez au carnet de récolte certifié de votre flacon</p>
+                    </span>
+                </span>
+            </div>
+
+            <span id="spanConsulter">
+                <input id="inputQr" type="text" value="ARG-2024-88">
+                <button id="buttonConsulter"><b>Consulter le passeport</b><img src="../icons/fleche-droite.svg" alt=""></button>
+            </span>
+            
+            <div id="cardInfo">
+                <div class="title-columns">
+                    <b>&#11044;  LOT ARG-2024-88 — CERTIFIÉ CONFORME</b>
+                    <span id="spanExtra"><b>Extraction manuelle contrôlée</b></span>
+                </div>
+                <div class="info-columns">
+                    <div class="info-col info-col-grid"><span><img src="../icons/explorer.svg" alt=""> <b>Terroir & Parcelle</b><br></span>
+                        <b>Vallée d'Ida Ouatanane</b>
+                        <p>Arganiers sauvages, 720m d'altitude</p>
+                    </div>
+                    <div class="info-col"><span><img src="../icons/calendrier.svg" alt=""> <b>Date de Récolte & Presse</b><br></span>
+                        <b>Septembre 2024</b>
+                        <p>Pressée à froid le 24/09/2024 à 28°C</p>
+                    </div>
+                    <div class="info-col"><span><img src="../icons/analyse.svg" alt=""> <b>Analyses de Pureté</b><br></span>
+                        <b>Acidité < 0.28%</b>
+                        <p>Vitamine E : 640 mg/kg (Ecocert n°24-098)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ___________________________________________ Traçabilité ______________________________________________ -->
+
+    <!-- ___________________________________________ Rituel de Fabrication ______________________________________________ -->
+    <section id="sectionRituel">
+        <div class="titleRituel">
+            <span class="spanRituel"><strong>LE RITUEL DE FABRICATION</strong></span>
+            <h1><strong>6 Étapes, Zéro Compromis</strong></h1>
+            <p>De la cime des arbres protégés de l'UNESCO jusqu'au scellement du bouchon en verre<br>ambré, chaque geste répond aux normes d'excellence les plus strictes.</p>
+        </div>
+        <article class="artic">
+            <div class="left">
+                <span class="cardEtapeB"><strong>ÉTAPE 01 &#8226; RAMASSAGE SOLAIRE</strong></span><br><br>
+                <h3>Récolte des fruits d'arganier sauvages</h3>
+                <p>Ramassage respectueux exclusivement au sol une fois que les fruits ont<br>mûri et chuté naturellement. Le gaulage est formellement banni pour<br>préserver les rameaux nourriciers et l'intégrité biologique de la canopée de<br>l'arganier.</p>
+                <span class="spanInfo"><img src="../icons/foret.svg" alt="Fruits d'arganier sauvages dans le sol à coté d'une arbre."> Forêt protégée du Souss-Massa</span>
+            </div>
+            <img class="imgEtape" src="../img/tracabilite/etape-01-recolte.jpg" height="320px" width="562px" alt="Une femme agée avec des fruits d'arganier dans un terrace.">
+        </article>
+        <article class="artic">
+            <img class="imgEtape" src="../img/tracabilite/etape-02-sechage.jpg" height="320px" width="562px" alt="Une femme agée qui frappe des fruits d'arganier avec un marteau.">
+            <div class="right">
+                <span class="cardEtapeO"><strong>ÉTAPE 02 &#8226; SÉCHAGE NATUREL</strong></span><br><br>
+                <h3>Séchage au soleil sur les terrasses</h3>
+                <p>Les fruits fraîchement recueillis sont étalés sur les toits plats de nos ateliers<br>coopératifs. Durant plusieurs semaines d'exposition au doux soleil<br>marocain, la pulpe se dessèche naturellement sans recours à aucun<br>séchoir artificiel ou combustible fossile.</p>
+                <span class="spanInfo"><img src="../icons/soleil.svg" alt=""> 21 jours sous brise atlantique</span>
+            </div>
+        </article>
+        <article class="artic">
+            <div class="left">
+                <span class="cardEtapeR"><strong>ÉTAPE 03 &#8226; SAVOIR-FAIRE ANCIEN</strong></span><br><br>
+                <h3>Dépulpage et concassage manuel</h3>
+                <p>Le coeur du geste ancestral : la coque, seize fois plus dure que celle d'une<br>noisette, est brisée d'un coup sec et précis entre deux galets de granit<br>polis. L'amandon blanc pur est libéré intact, sans jamais être écrasé.</p>
+                <span class="spanInfo"><img src="../icons/main.png" alt=""> Geste transmis de mère en fille</span>
+            </div>
+            <img class="imgEtape" src="../img/tracabilite/etape-03-concassage.jpg" height="320px" width="562px" alt="Une femme agée qui fait quire des fruits d'arganier dans un tajine.">
+        </article>
+        <article class="artic">
+            <img class="imgEtape" src="../img/tracabilite/etape-04-torrefaction.jpg" height="320px" width="562px" alt="Un robinet qui fait sortit l'huile d'arganier sur un bécher.">
+            <div class="right">
+                <span class="cardEtapeO"><strong>ÉTAPE 04 &#8226; CULINAIRE SEULEMENT</strong></span><br><br>
+                <h3>Torréfaction artisanale au feu doux</h3>
+                <p>Réservée exclusivement à notre gamme alimentaire et notre Amlou du<br>terroir. Les amandons sont lentement dorés dans un plat en terre cuite à<br>feu très doux pour déployer des arômes irrésistibles de noisette grillée et<br>de pain chaud. L'huile cosmétique, elle, ne subit aucune cuisson pour<br>conserver 100% de sa vitamine E.</p>
+                <span class="spanInfo"><img src="../icons/feu.svg" alt="Un flacon compte-gouttes de huile d'arganier, à coté de quelques fruits d'arganier sauvages."> Arômes gourmands délicats</span>
+            </div>
+        </article>
+        <article class="artic">
+            <div class="left">
+                <span class="cardEtapeB"><strong>ÉTAPE 05 &#8226; PREMIÈRE PRESSION</strong></span><br><br>
+                <h3>Pressage à froid mécanique < 40°C</h3>
+                <p>Extraction mécanique continue sans aucun solvant chimique ni adjonction<br>d'eau. La température est surveillée minute par minute pour ne jamais<br>dépasser 38°C, garantissant un taux intact d'acides gras essentiels<br>(Oméga 6 & 9) et de stérols protecteurs.</p>
+                <span class="spanInfo"><img src="../icons/temperature.png" alt=""> Certification Ecocert Biologique</span>
+            </div>
+            <img class="imgEtape" src="../img/tracabilite/etape-05-pressage.jpg" height="320px" width="562px" alt="">
+        </article>
+        <article class="artic">
+            <img class="imgEtape" src="../img/tracabilite/etape-06-mise-en-bouteille.jpg" height="320px" width="562px" alt="">
+            <div class="right">
+                <span class="cardEtapeR"><strong>ÉTAPE 06 &#8226; CLARTÉ & PROTECTION</strong></span><br><br>
+                <h3>Décantation naturelle & Verre ambré</h3>
+                <p>L'huile repose pendant 15 jours en cuves inox pour laisser se déposer les<br>micro-sédiments. Après un double passage sur filtre en papier vierge non<br>blanchi, le précieux nectar est scellé dans nos flacons de verre ambré<br>opaque qui repoussent 99% des rayons ultraviolets.</p>
+                <span class="spanInfo"><img src="../icons/inventaire.svg" alt=""> Flacons recyclables anti-oxydation</span>
+            </div>
+        </article>  
+    </section>
+    <!-- ___________________________________________ Rituel de Fabrication ______________________________________________ -->
+
+    <!-- ___________________________________________ Personnes ______________________________________________ -->
+    <section id="sectionPersonnes">
+
+        <div id="titlePersonnes">
+            <div id="divLeft">
+                <span id="spanPersonnes">ÂME & VISAGES DU COLLECTIF</span>
+                <h1>Rencontrez nos coopératrices</h1>
+            </div>
+            <p>Chaque flacon est le résultat d'un engagement humain<br>solidaire. Les femmes de notre coopérative sont associées<br>à 100% aux bénéfices de leur travail</p>
+        </div>
+
+        <div id="divArticles">
+            <article>
+                <img class="imgCard" src="../img/cooperatrices/amina-ait-salem.jpg" alt="Femme agée souriante en écrasant quelques fruits d'arganier, à coté d'une multitude de bouteilles qui contiennent l'huile d'arganier.">
+                <div class="divInfo">
+                    <span>32 ANS DE MÉTIER</span>
+                    <span class="spanLocale">Ida Outanane</span>
+                    <h4>Amina Ait Salem</h4>
+                    <h5>Maîtresse concasseuse</h5>
+                    <span class="spanQuote">
+                        <p>« Chaque amandon exige patience et respect. On écoute le bruit de la coque qui cède pour ne jamais heurter le fruit. »</p>
+                    </span>
+                    <span class="spanPersonneInfo"><img src="../icons/coche-cercle.svg" alt=""><p>Spécialiste concassage manuel</p></span>
+                </div>
+            </article>
+            <article>
+                <img class="imgCard" src="../img/cooperatrices/malika-el-fassi.jpg" alt="Femme souriante dans un laboratoire, qui analyse un bécher d'huile.">
+                <div class="divInfo">    
+                    <span>DIPLÔMÉE AGROCHIMIE</span>
+                    <span class="spanLocale">Agadir</span>
+                    <h4>Malika El Fassi</h4>
+                    <h5>Responsable qualité & filtrage</h5>
+                    <span class="spanQuote">
+                        <p>« Nous veillons à ce que chaque flacon soit d'une pureté irréprochable. L'analyse de chaque extraction est scrupuleusement enregistrée. »</p>
+                    </span>
+                    <span class="spanPersonneInfo"><img src="../icons/chimie.png" alt=""><p>Contrôle analytique & Ecocert</p></span>
+                </div>
+            </article>
+            <article>
+                <img class="imgCard" src="../img/cooperatrices/zahra-bouzid.jpg" alt="Femme souriante portant des racines d'arganier, dans une forêt d'arganier, devant des montagnes.">
+                <div class="divInfo">
+                    <span>PIONNIÈRE COOP</span>
+                    <span class="spanLocale">Taroudant</span>
+                    <h4>Zahra Bouzid</h4>
+                    <h5>Coordinatrice des récoltes</h5>
+                    <span class="spanQuote">
+                        <p>« Grâce à la coopérative, nos enfants poursuivent leurs études supérieures et nos villages revivent dans la dignité retrouvée. »</p>
+                    </span>
+                    <span class="spanPersonneInfo"><img src="../icons/groupe.svg" alt=""><p>64 familles bénéficiaires</p></span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- ___________________________________________ Personnes ______________________________________________ -->
+        
+    <!-- ___________________________________________ Certifications ______________________________________________ -->
+    <section id="sectionCertif">
+        <div id="titleCertif">
+            <span class="spanRituel"><p>GARANTIES & CONFORMITÉ</p></span> 
+            <h4>Nos Certifications Officielles</h4>
+        </div>
+        
+        <div id="divCards">
+            <article>
+                <img class="imgB" src="../icons/star.png" alt="">
+                <h2>IGP Argane du Souss</h2>
+                <p class="pContenu">Indication Géographique Protégée certifiant la provenance originelle exclusive de la région du Souss-Massa.</p>
+                <span class="spanCertif"><p>N° Enreg. IGP-MA-002</p></span>
+            </article>
+            <article>
+                <img class="imgB" src="../icons/feuille-eco.svg" alt="">
+                <h2>Ecocert Biologique</h2>
+                <p class="pContenu">Certifié 100% issu de l'agriculture biologique conforme aux règlements stricts européens et marocains.</p>
+                <span class="spanCertif"><p>Organisme certificateur MA-BIO-154</p></span>
+            </article>
+            <article>
+                <img class="imgO" src="../icons/diversite.svg" alt="">
+                <h2>Commerce Équitable<br>WFTO</h2>
+                <p class="pContenu">Rémunération juste, gouvernance démocratique coopérative et prévoyance sociale intégrale pour les artisanes.</p>
+                <span class="spanCertif"><p>Adhérent Fair Trade International</p></span>
+            </article>
+            <article>
+                <img class="imgB" src="../icons/assurance.png" alt="">
+                <h2>Normes ONSSA</h2>
+                <p class="pContenu">Agrément sanitaire de l'Office National de Sécurité Sanitaire des Produits Alimentaires du Royaume du Maroc.</p>
+                <span class="spanCertif"><p>Autorisation sanitaire officielle</p></span>
+            </article>
+        </div>
+        
+    </section>
+    <!-- ___________________________________________ Certifications ______________________________________________ -->
+            
+    
+
+<!-- ______________________________________________ Footer _______________________________________________ -->
+    <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-top">
+
+      <div class="footer-about">
+        <a href="#"><img src="../img/logo/arganik-logo.svg" alt="logo"></a>
+
+        <p>
+          Héritage séculaire de la Vallée du Souss. Notre
+          coopérative féminine perpétue l'extraction artisanale
+          de l'huile d'argan pure certifiée biologique, garantissant
+          une juste rétribution à plus de 60 artisanes locales.
+        </p>
+
+        <h4>HORAIRES D'OUVERTURE</h4>
+        <p class="hours"><i class="fa-regular fa-clock"></i> &nbsp; Lundi - Samedi : 08h30 - 18h00</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>NAVIGATION & PRODUITS</h3>
+        <a href="../index.html">Accueil & Coopérative</a>
+        <a href="../fichProduit/fich.html">Huile d'Argan Cosmétique</a>
+        <a href="#">Huile Culinaire Torréfiée</a>
+        <a href="#">Amlou Traditionnel aux Amandes</a>
+        <a href="#">Savons Purs & Soins Botaniques</a>
+        <a href="#">Traçabilité & Cartographie</a>
+        <a href="#">Engagements & Impact Féminin</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3>ATELIER & CONTACT</h3>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          &nbsp; Route d'Imouzzer,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Région Souss-Massa,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Agadir, Maroc
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          &nbsp; +212 (0)5 28 84 92 10
+        </p>
+
+        <p>
+          <i class="fa-regular fa-envelope"></i>
+          &nbsp; contact@arganik-<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; coop.ma
+        </p>
+
+
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <i class="fa-solid fa-camera"></i>
+          </a>
+          <a href="#" aria-label="Website">
+            <i class="fa-solid fa-earth-americas"></i>
+          </a>  
+          <a href="#" aria-label="Messages">
+            <i class="fa-regular fa-message"></i>
+          </a>
+          <a href="#" aria-label="Bookmark">
+            <i class="fa-regular fa-bookmark"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>LETTRE DU TERROIR</h3>
+
+        <p>
+          Recevez nos carnets de récolte, nouvelles
+          de la coopérative et éditions limitées.
+        </p>
+
+        <form>
+          <input type="email" placeholder="Votre adresse courriel..." required>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+
+    </div>
+
+    
+    <div class="certifications">
+      <div><img src="../icons/certifie.svg" alt="icon"> &nbsp; CERTIFIÉ BIOLOGIQUE MAROC</div>
+      <div><img src="../icons/feuille-eco.svg" alt="icon"> &nbsp; ECOCERT COSMÉTIQUE NATUREL</div>
+      <div> <img src="../icons/diversite.svg" alt="icon">&nbsp; COMMERCE ÉQUITABLE SOLIDAIRE</div>
+      <div><img src="../icons/coche.svg" alt="icon"> &nbsp; IGP ARGANE DU SOUSS</div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Coopérative Féminine Arganik. Tous droits réservés.</p>
+
+      <div class="legal-links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">Conditions de vente</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ______________________________________________ Footer ______________________________________________ -->
+</body>
+<script src="script.js"></script>
+</html>
