@@ -1,5 +1,3 @@
-/* css of header  */
-/* css of header  */
 html {
     scroll-behavior: smooth;
 }
@@ -14,7 +12,7 @@ body {
 /* header css */
 header {
   position: relative;
-  height: 80px;
+  height: 90px; 
 }
 
 header .headercontainer {
@@ -928,7 +926,6 @@ align-items: center;
   }
 }
 
-/* Pour les tablettes */
 @media (max-width: 1024px) {
 
     .footer-top {
@@ -1190,20 +1187,20 @@ body {
 /* header css */
 header .headercontainer {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 90px;
   background-color: rgb(247, 243, 243);
-  overflow: hidden;
-  margin-top: -1.30vw;
+  margin-top: 0; 
 }
 
 .headercontainer .info {
-  margin-top: 10px;
+  margin-top: 0;
+  padding: 4px 10px;
   color: white;
   background-color: #173728;
-  font-size: 2vh;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -1211,8 +1208,8 @@ header .headercontainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
-  margin: 10px;
+  height: 60px;
+  margin: 0 10px;
 }
 
 .tete a {
@@ -1231,7 +1228,7 @@ header .headercontainer {
   justify-content: space-between;
   align-items: center;
   padding: 2px 14px;
-  font-size: 2.3vh;
+  font-size: 1rem;
   border-radius: 50px;
 }
 
@@ -1488,10 +1485,7 @@ p {
 #minicard {
   display: flex;
   align-items: center;
-  /* display: grid; */
   color: #795700;
-  /* grid-template-columns: 1vw 15vw; */
-  /* grid-template-rows: 1vw; */
   gap: 0.5vw;
   margin: 0 auto;
   font-weight: bold;
@@ -1502,23 +1496,21 @@ p {
   border-radius: 30px;
 }
 
-#card-verif {
+#cardVerif {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding: 2%;
   background-color: #FFF8EF;
-  width: fit-content;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
   border-radius: 15px;
   box-shadow: 0px 7px 7px #ebdfca;
 }
-#card-verif b {
-  width: max-content;
-} #card-verif p {
+#cardVerif p {
   color: #636761;
 }
 #cardInfo {
-  order: 3;
   border: #F9F2E6 2px solid;
   border-radius: 10px;
   background-color: #F9F2E6;
@@ -1526,7 +1518,6 @@ p {
   text-align: left;
 }
 #cardInfo b {
-  /* font-size: 1.30vw; */
   font-family: Plus Jakarta Sans;
 }
 
@@ -1537,17 +1528,11 @@ p {
   padding: 3vw;
   font-size: large;
 }
-.titleTraca span {
-  width: min-content;
-}
-.titleTraca span p {
-  width: max-content;
-}
 .titleTraca h1 {
   color: #183324;
   margin-bottom: 1vw;
 }
-.titleTraca h1 ~ p {
+.pTitre {
   color: rgb(64, 64, 64);
 }
 #cardInfo span b {
@@ -1558,7 +1543,6 @@ p {
 }
 #imgGlass {
   height: fit-content;
-  width: fit-content;
   background-color: #CAE9D4;
   border-radius: 100%;
   padding: 2%;
@@ -1575,8 +1559,9 @@ p {
   color: #745200;
   border: none;
   border-radius: 10px;
-  padding: 1vw;
-  height: 4vw;
+  padding: 0.6rem 1rem;
+  min-height: 3.2rem;
+  white-space: nowrap;
 
 } #buttonConsulter b {
   font-size: 1.2rem;
@@ -1591,9 +1576,9 @@ p {
   grid-column: 1;
   font-size: 1.2rem;
   font-family: var(--font-body);
-  height: 4vw;
+  min-height: 3.2rem;
   border: none;
-  padding: 1vw;
+  padding: 0.6rem 1rem;
   margin-bottom: 1vw;
   border-radius: 6px;
   box-shadow: inset 0px 0px 5px #ebdfca;
@@ -1602,7 +1587,6 @@ p {
 }
 
 #spanConsulter {
-  order: 2;
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 1%;
@@ -1610,59 +1594,43 @@ p {
 }
 
 /* Titre carte vérification */
-.verif-header {
+.spanVerif {
   display: flex;
-  flex-direction: row;
 }
-.verif-header h2 {
+.spanVerif h2 {
   font-weight: 100;
   margin-left: -4.5vw;
 }
-.verif-header p {
+.spanVerif p {
   margin-left: 0.5vw;
 }
 
 /* Colonnes d'infos */
-.title-columns {
+.divTitle {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   align-items: center;
   justify-content: space-between;
-} .title-columns b {
-  font-size: 1rem;
 }
 #spanExtra {
   color: #6B6F67;
-  float: right;
-  padding: 0.5vw;
+  padding: 0.35rem 0.75rem;
   background-color: #F4EDE1;
   border-radius: 10px;
-  margin: 1vw;
 }
-/* @media (max-height: 667px) and (max-width: 375px){
-  .info-columns {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  #card-verif {
-    width: min-content;
-  }
-  #cardInfo {
-    width: auto;
-  }
-} */
-.info-columns {
+
+.divCols {
   display: flex;
-  flex-direction: row;
-  width: min-content;
-  gap: 1%;
-} .info-columns b {
+  gap: 1.5rem;
+} .divCols b {
   font-size: 1.15rem;
 }
-.info-col {
-  width: max-content;
-  text-align: left;
+.divCol,
+.divCol1 {
+  flex: 1;
 }
-.info-col-grid {
+.divCol1 {
   display: grid;
 }
 
@@ -1729,22 +1697,22 @@ p {
 }
 
 /* Badges d'étape */
-.cardEtapeB,
-.cardEtapeO,
-.cardEtapeR {
+.etapeB,
+.etapeO,
+.etapeR {
   font-size: 0.9vw;
   border-radius: 30px;
   padding: 0.4vw 1vw;
 }
-.cardEtapeB {
+.etapeB {
   background-color: #CAE9D4;
   color: #051F13;
 }
-.cardEtapeO {
+.etapeO {
   background-color: #FFDDA7;
   color: #5D4200;
 }
-.cardEtapeR {
+.etapeR {
   background-color: #FFDBCD;
   color: #7C2D07;
 }
@@ -1796,7 +1764,6 @@ p {
 #divArticles {
   display: flex;
   gap: 3vw;
-  width: fit-content;
 } #divArticles article {
   border-radius: 20px;
   background-color: #EFEFEF;
@@ -1807,7 +1774,6 @@ p {
 .imgCard {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  width: max-content;
   height: 16vw;
 }
 
@@ -1835,7 +1801,7 @@ p {
 } .divInfo p {
   font-weight: 200;
 }
-.divInfo > span:first-child,
+.spanHaut,
 .spanLocale {
   grid-row: 1;
 }
@@ -1843,19 +1809,19 @@ p {
   width: max-content;
   color: #434343;
 }
-.spanPersonneInfo {
+.spanBas {
   grid-row: 5;
   display: flex;
   color: #434343;
   align-items: center;
   padding-top: 2vw;
-  
-} .spanPersonneInfo p {
+
+} .spanBas p {
   font-size: 0.9088vw;
   color: #252525;
   width: max-content;
   font-weight: 600;
-} .spanPersonneInfo img {
+} .spanBas img {
   margin-right: 5px;
 }
 
@@ -1873,8 +1839,7 @@ p {
   background-image: linear-gradient(#FFF8EF, #faeddb);
   padding-bottom: 4vw;
 } #sectionCertif article {
-  background-image: radial-gradient(#faf5ec, #f7efe2) ;
-  width: fit-content;
+  background-image: radial-gradient(#faf5ec, #f7efe2);
   text-align: center;
   border-radius: 16px;
   padding: 1vw;
@@ -1882,7 +1847,7 @@ p {
   padding-top: 1.8vw;
   padding-bottom: 1vw;
   box-shadow: rgb(236, 214, 175) 0px 10px 20px;
-} 
+}
 #sectionCertif p {
   font-size: 1.08vw;
 }
@@ -1910,10 +1875,9 @@ p {
   color: #183324;
   padding-bottom: 4vw;
 } #titleCertif p {
-  color: #7C5700;
   font-weight: bold;
   font-size: 1vw;
-} 
+}
 /* Cartes certifications */
 #divCards {
   display: flex;
@@ -1933,8 +1897,18 @@ p {
 }
 
 @media (max-width: 768px) {
-  #card-verif {
-    width: min-content;
+  header,
+  header .headercontainer {
+    height: 104px;
+  }
+  .headercontainer .info {
+    font-size: 11px;
+    padding: 4px 8px;
+    line-height: 1.4;
+  }
+
+  #cardVerif {
+    width: 94%;
     justify-content: center;
   }
 
@@ -1943,36 +1917,22 @@ p {
   }
 
   #spanConsulter {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     align-items: center;
   }
   #inputQr {
-    grid-column: 1;
     grid-row: 1;
-    padding: 5vw;
-    /* width: 40%; */
+    padding: 0.6rem 0.8rem;
   }
   #buttonConsulter {
-    grid-column: 2;
     grid-row: 1;
-    padding: 3vw;
-    height: 9.7vw;
-    /* margin: 3vw; */
+    padding: 0.6rem;
+    margin-bottom: 1vw;
   }
   #sectionRituel article {
     flex-direction: column;
     font-size: 3rem;
-    text-align: center;
-    align-items: center;
-    /* margin-top: 5vw; */
     padding-top: 10vw;
-    /* border-top: moccasin 2px solid;
-    border-bottom: moccasin 2px solid; */
   }
 
   .left {
@@ -1985,7 +1945,7 @@ p {
   } .left span {
     font-size: 1rem;
     padding: 1%;
-  } 
+  }
 
   .right {
     border: none;
@@ -2003,39 +1963,32 @@ p {
     width: 90%;
     height: auto;
   }
-
-  .cardEtapeB {
-    font-size: 1.5rem;
+  #sectionRituel .reverse {
+    flex-direction: column-reverse;
   }
 
-  .info-columns {
+
+  .divCols {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .info-columns > div {
+  .divCol,
+  .divCol1 {
     padding: 3%;
   }
 
   #titlePersonnes {
     display: flex;
     flex-direction: column;
-    /* grid-template-rows: auto auto auto;
-    grid-template-columns: auto; */
-    /* justify-self: center;
-    text-align: center; */
   } #titlePersonnes h1 {
     font-size: 7vw;
+    justify-self: center;
   }
   #spanPersonnes {
-    text-align: center;
     justify-self: center;
     font-size: 1rem;
   } #divLeft {
     text-align: center;
-  }
-  #titlePersonnes h1 {
-    text-align: center;
-    justify-self: center;
   }
   #titlePersonnes p {
     text-align: center;
@@ -2047,7 +2000,7 @@ p {
     flex-direction: column;
   } #divArticles article {
     width: 85vw;
-    
+
   } .divInfo span {
     font-size: 0.7rem;
   } .divInfo h4 {
@@ -2073,7 +2026,6 @@ p {
     align-items: center;
   } #divCards article {
     width: 90%;
-    height: 50%;
     padding-bottom: 7%;
     box-shadow: 0px 0px 20px rgb(220, 186, 126);
   } #divCards article h2 {
@@ -2084,5 +2036,16 @@ p {
     margin-top: 1.5vw;
   } #divCards article p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #spanConsulter {
+    grid-template-columns: 1fr;
+  }
+  #buttonConsulter {
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 0;
   }
 }
